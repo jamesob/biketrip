@@ -1,0 +1,77 @@
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#page, #footer {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+#header {
+    display: block;
+}
+
+#headertext {
+    padding: 80px 0px 10px 20px;
+}
+
+#nav {
+    margin-bottom: 100px;
+}
+
+#nav ul {
+    float: right;
+}
+
+#nav li {
+    padding: 5px;
+    display: inline;
+    float: left;
+    margin-left: 1em;
+}
+
+#content {
+    float: left;
+    width: 560px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 100px;
+}
+
+#inner-nav {
+    float: left;
+    width: 200px;
+}
+
+#footer {
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    width: 600px;
+    margin-top: -3em;
+    border-top: 1px solid #CCC;
+    padding-top: 20px;
+    clear: both;
+}
+
+#footer #contacts {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mike-contact, #james-contact {
+    width: 250px;
+    float: left;
+}
+
+
+
+
+

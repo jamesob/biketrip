@@ -1,0 +1,59 @@
+ 
+@font-face {
+	font-family: "Hetilica";
+	src: url("/fonts/hetilica.ttf");
+}
+                   
+@font-face {
+	font-family: "Ballpark";
+	src: url("/fonts/ballpark.ttf");
+}
+                   
+@font-face {
+	font-family: "QuicksandBold";
+	src: url("/fonts/Quicksand_Bold.otf");
+}               
+
+h1, h2, h3, h4 {
+    font-family: "QuicksandBold";
+}
+
+#content p {
+    line-height: 1.5em;
+}
+
+#headertext {
+	font-size: 2em;
+	font-family: "Ballpark";
+}
+
+#nav li {
+    border-bottom: 1px solid #BBB;
+}
+
+#headertext a {
+    color: #F5B657;
+    text-decoration: none;
+}
+                
+#header {
+	background-image: url('/images/cropped_bikes800.jpg');
+    -moz-border-bottom-left-radius: 15px;
+    -moz-border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+ 
+#footer ul {
+   list-style-type: none;
+} 
+
+#footer li {
+    padding: 4px;
+    color: #444;
+}
+
+#footer b {
+    color: #8C6354;
+}
+ 
