@@ -8,13 +8,20 @@
   <link rel="stylesheet" href="/css/layout.css" type="text/css">
   <link rel="stylesheet" href="/css/presentation.css" type="text/css">
 
-  <!-- <link rel="alternate" type="application/rss+xml" title="jamesob" 
-  href="http://jamesob.nfshost.com/rss.xml" />
-  -->
-   
+  {% if page.headScripts %}
+    {% for script in page.headScripts %}
+  <script type="text/javascript" src="{{ script }}"></script>
+    {% endfor %}
+  {% endif %}
+
 </head>
 
+{% if page.onload %}
+<body onload="{{ page.onload }}">
+{% else %}
 <body>
+{% endif %}
+   
 
   <div id="page">
     <div id="header">
@@ -26,13 +33,13 @@
 
     <div id="nav">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="us.html">Meet your hosts</a></li>
-        <li><a href="route.html">The route</a></li>
-        <li><a href="logs">Daily logs</a></li>
-        <li><a href="gear.html">Expenses and pack list</a></li>
-        <li><a href="preparing.html">Training</a></li>
-        <li><a href="links.html">Links</a></li>
+        <a href="/"><li>Home</li></a>
+        <a href="us.html"><li>Meet your hosts</li></a>
+        <a href="route.html"><li>The route</li></a>
+        <a href="logs"><li>Daily logs</li></a>
+        <a href="gear.html"><li>Expenses and pack list</li></a>
+        <a href="preparing.html"><li>Training</li></a>
+        <a href="links.html"><li>Links</li></a>
       </ul>
     </div>
 
@@ -52,6 +59,7 @@
         <div id="james-contact">
           <ul>
             <li><b>James O'Beirne</b></li>
+            <li>jamesob.nfshost.com</li>
             <li>james.obeirne@gmail.com</li>
             <li>twitter.com/jamesob</li>
           </ul>
