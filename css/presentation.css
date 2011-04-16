@@ -31,6 +31,11 @@ h1, h2, h3, h4 {
     border-bottom: 1px solid #BBB;
 }
 
+#nav a {
+  text-decoration: none;
+  color: #333;
+}
+
 #headertext a {
     color: #F5B657;
     text-decoration: none;
