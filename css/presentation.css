@@ -13,12 +13,21 @@
   font-family: "QuicksandBold";
   src: url("/fonts/Quicksand_Bold.otf");
 }               
-
+                            
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/Quicksand_Light.otf");
+}                           
 h1, h2, h3, h4 {
-  font-family: "QuicksandBold";
+  font-family: "Quicksand";
 }
 
-body img {
+h1 {
+  margin-bottom: 40px;
+}
+
+
+body img, #regularMap, #usaMap {
   padding: 5px;
   line-height: 0px;
   border: 1px solid #888;
@@ -31,15 +40,20 @@ ul {
   list-style-type: circle;
 }
 
+ol, ul {
+  margin-bottom: 1em;
+}
+
 ul p {
   line-height: normal;
 }
 
 p {
+  margin-top: 1em;
   line-height: 1.5em;
 }
 
-img.center {
+.blockCenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -49,6 +63,7 @@ img.bio {
   height: 350px;
   position: absolute
   top: 0%;
+  margin-bottom: 20px;
 }
 
 #james-bio img {
@@ -60,14 +75,13 @@ img.bio {
 }
 
 #content a {
-  color: #50B9D3;
+  font-weight: bold;
+  color: #6FBA99;
   text-decoration: none;
-  border-bottom: 1px dashed #50B9D3;
 }
 
 #content a:hover {
-  color: #F5B657;
-  border-bottom: 1px dashed #F5B657;
+  color: #EBA162;
 }
 
 
@@ -89,6 +103,10 @@ img.bio {
   color: #333;
 }
 
+#nav li:hover {
+  border-bottom: 1px solid #F45945;
+}
+
 #headertext a {
   color: #F5B657;
   text-decoration: none;
@@ -100,6 +118,11 @@ img.bio {
   -moz-border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+#footer {
+  font-size: 0.8em;
+  padding-bottom: 100px;
 }
 
 #footer ul {
