@@ -1,21 +1,21 @@
- 
+
 @font-face {
-	font-family: "Hetilica";
-	src: url("/fonts/hetilica.ttf");
+  font-family: "Hetilica";
+  src: url("/fonts/hetilica.ttf");
 }
-                   
+
 @font-face {
-	font-family: "Ballpark";
-	src: url("/fonts/ballpark.ttf");
+  font-family: "Ballpark";
+  src: url("/fonts/ballpark.ttf");
 }
-                   
+
 @font-face {
-	font-family: "QuicksandBold";
-	src: url("/fonts/Quicksand_Bold.otf");
+  font-family: "QuicksandBold";
+  src: url("/fonts/Quicksand_Bold.otf");
 }               
 
 h1, h2, h3, h4 {
-    font-family: "QuicksandBold";
+  font-family: "QuicksandBold";
 }
 
 body img {
@@ -25,6 +25,18 @@ body img {
   -moz-box-shadow: 2px 2px 4px #333;
   -webkit-box-shadow: 2px 2px 4px #333;
   box-shadow: 2px 2px 4px #333;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ul p {
+  line-height: normal;
+}
+
+p {
+  line-height: 1.5em;
 }
 
 img.center {
@@ -46,18 +58,30 @@ img.bio {
 #mike-bio img {
   right: 0%;
 }
-       
-p {
-    line-height: 1.5em;
+
+#content a {
+  color: #50B9D3;
+  text-decoration: none;
+  border-bottom: 1px dashed #50B9D3;
 }
 
+#content a:hover {
+  color: #F5B657;
+  border-bottom: 1px dashed #F5B657;
+}
+
+
 #headertext {
-	font-size: 2em;
-	font-family: "Ballpark";
+  font-size: 2em;
+  font-family: "Ballpark";
+}
+
+#nav {
+  padding-right: 20px;
 }
 
 #nav li {
-    border-bottom: 1px solid #BBB;
+  border-bottom: 1px solid #BBB;
 }
 
 #nav a {
@@ -66,28 +90,28 @@ p {
 }
 
 #headertext a {
-    color: #F5B657;
-    text-decoration: none;
+  color: #F5B657;
+  text-decoration: none;
 }
-                
+
 #header {
-	background-image: url('/images/cropped_bikes800.jpg');
-    -moz-border-bottom-left-radius: 15px;
-    -moz-border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+  background-image: url('/images/cropped_bikes800.jpg');
+  -moz-border-bottom-left-radius: 15px;
+  -moz-border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
- 
+
 #footer ul {
-   list-style-type: none;
+  list-style-type: none;
 } 
 
 #footer li {
-    padding: 4px;
-    color: #444;
+  padding: 4px;
+  color: #444;
 }
 
 #footer b {
-    color: #8C6354;
+  color: #8C6354;
 }
- 
+
