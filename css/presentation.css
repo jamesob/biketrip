@@ -18,7 +18,36 @@ h1, h2, h3, h4 {
     font-family: "QuicksandBold";
 }
 
-#content p {
+body img {
+  padding: 5px;
+  line-height: 0px;
+  border: 1px solid #888;
+  -moz-box-shadow: 2px 2px 4px #333;
+  -webkit-box-shadow: 2px 2px 4px #333;
+  box-shadow: 2px 2px 4px #333;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.bio {
+  height: 350px;
+  position: absolute
+  top: 0%;
+}
+
+#james-bio img {
+  left: 0%;
+}
+
+#mike-bio img {
+  right: 0%;
+}
+       
+p {
     line-height: 1.5em;
 }
 

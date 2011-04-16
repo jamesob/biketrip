@@ -49,11 +49,29 @@ html, body {
     width: 200px;
 }
 
+#bios {
+  margin-top: 60px;
+  width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mike-bio, #james-bio {
+  float: left;
+  width: 250px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 100px;
+}
+
+#mike-bio {
+  text-align: right;
+}
+
 #footer {
     position: relative;
     z-index: 10;
     height: 3em;
-    width: 600px;
     margin-top: -3em;
     border-top: 1px solid #CCC;
     padding-top: 20px;
