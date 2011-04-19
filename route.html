@@ -2,21 +2,14 @@
 layout: base
 title: The Route -- holy !$@#
 headScripts: ["http://maps.google.com/maps/api/js?sensor=false",
-              "/js/directionsMap.js"]
+              "/js/kmlMap.js"]
 ---
 
 <div id="usaMap" class="blockCenter"></div>
 
 <script type="text/javascript">
-  initialize('usaMap', 'Reston, VA');
-  drawRoute(
-      [
-        "521 Aspen Drive, Herndon, VA",
-        "Vienna, VA",
-        "Washington, D.C.",
-        "McLean, VA"
-      ]
-   );
+  initializeMap('usaMap', 8);
+  loadKML('http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&msid=203384579587508079739.0004a13c28b9b49f602a3&ll=27.527758,-93.955078&spn=94.094032,71.806641&z=4&lci=bike&output=kml');
 </script>
  
 
