@@ -1,0 +1,127 @@
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+h1, h2, h3, h4 {
+  clear: both;
+}
+
+#page, #footer {
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0
+}
+
+/* header */
+
+#header {
+  display: block;
+}
+
+#headertext {
+  padding: 80px 0px 10px 20px;
+}
+
+/* nav */
+
+#nav {
+  height: 60px;
+  margin-bottom: 60px;
+}
+
+#nav ul {
+  margin-left: 30px;
+}
+
+#nav li {
+  padding: 5px;
+  display: inline;
+  float: left;
+  margin-left: 1em;
+}
+
+#nav li a {
+  display: inline;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* content */
+
+#content {
+  float: left;
+  width: 560px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 100px;
+}
+
+#inner-nav {
+  float: left;
+  width: 200px;
+}
+
+#bios {
+  margin-top: 60px;
+  width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mike-bio, #james-bio {
+  float: left;
+  width: 250px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 100px;
+}
+
+#mike-bio {
+  text-align: right;
+}
+
+#regularMap {
+  width: 400px;
+  height: 400px;
+}
+
+#usaMap {
+  width: 650px;
+  height: 400px;
+  margin-bottom: 100px;
+}
+
+/* footer */
+
+#footer {
+  position: relative;
+  z-index: 10;
+  height: 3em;
+  margin-top: -3em;
+  border-top: 1px solid #CCC;
+  padding-top: 20px;
+  clear: both;
+}
+
+#footer #contacts {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mike-contact, #james-contact {
+  width: 250px;
+  float: left;
+}
+
+
+
+
+

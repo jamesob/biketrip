@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>{{ page.title }}</title>
+  <meta name="author" content="James O'Beirne" />
+ 
+  <link rel="stylesheet" href="/css/layout.css" type="text/css">
+  <link rel="stylesheet" href="/css/presentation.css" type="text/css">
+
+  {% if page.headScripts %}
+    {% for script in page.headScripts %}
+  <script type="text/javascript" src="{{ script }}"></script>
+    {% endfor %}
+  {% endif %}
+
+</head>
+
+{% if page.onload %}
+<body onload="{{ page.onload }}">
+{% else %}
+<body>
+{% endif %}
+   
+
+  <div id="page">
+    <div id="header">
+      <div id="headertext">
+
+        <a href="/">Ad Hoc<br />Adventure<br />Time</a>
+      </div>
+    </div>
+
+    <div id="nav">
+      <ul>
+        <a href="/"><li>Home</li></a>
+        <a href="us.html"><li>Meet your hosts</li></a>
+        <a href="route.html"><li>The route</li></a>
+        <a href="logs"><li>Daily logs</li></a>
+        <a href="https://spreadsheets.google.com/pub?hl=en&key=0Ak3iHHPjPogJdDExd3JBOTN4UElIR1dJekZMRzctNlE&hl=en&gid=2"><li>Expenses and pack list</li></a>
+        <a href="preparing.html"><li>Training</li></a>
+        <a href="links.html"><li>Links</li></a>
+      </ul>
+    </div>
+
+    {{ content }}
+ 
+    <div id="footer">
+
+      <div id="contacts">
+
+        <div id="mike-contact">
+          <ul>
+            <li><b>Mike Atkins</b></li>
+            <li>matkins@gmu.edu</li>
+          </ul>
+        </div>                
+
+        <div id="james-contact">
+          <ul>
+            <li><b>James O'Beirne</b></li>
+            <li>jamesob.nfshost.com</li>
+            <li>james.obeirne@gmail.com</li>
+            <li>twitter.com/jamesob</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
+
