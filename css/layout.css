@@ -98,6 +98,12 @@ h1, h2, h3, h4 {
   margin-bottom: 100px;
 }
 
+#packListFrame {
+  width: 650px;
+  height: 800px;
+  margin-bottom: 100px;
+}
+
 /* footer */
 
 #footer {
