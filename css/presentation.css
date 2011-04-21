@@ -204,11 +204,11 @@ img.bio {
 
 #footer a {
   text-decoration: none;
-  color: #444;
+  color: #888;
 }
 
 #footer a:hover {
-  color: #888;
+  color: #DDD;
 }
 
 #footer ul {
