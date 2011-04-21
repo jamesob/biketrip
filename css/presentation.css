@@ -180,11 +180,11 @@ img.bio {
 	content: "\00BB \0020";
 } 
 
-#tweets ul, #innerPageNav ul {
+#jtweets ul, #mtweets ul, #innerPageNav ul {
   list-style-type: none;
 }
 
-#tweets li, #innerPageNav li {
+#mtweets li, #jtweets li, #innerPageNav li {
   margin-bottom: 10px;
   font-size: 0.8em;
 }

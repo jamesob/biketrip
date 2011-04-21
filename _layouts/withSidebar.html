@@ -37,11 +37,24 @@ headScripts: ["/js/twitter.js", "/js/jquery-1.5.2.min.js"]
   </ul>
   <div id="twitShite">
     <h4>Twitbiz</h4>
-    <div id="tweets"></div>
+    <div id="jtweets"></div>
     <script type="text/javascript">
-      getTwitters('tweets', { 
+      getTwitters('jtweets', { 
         id: 'jamesob', 
-        count: 4, 
+        count: 3, 
+        enableLinks: true, 
+        ignoreReplies: true, 
+        clearContents: true,
+        template: '"%text%"<br /><a href="http://twitter.com/%user_screen_name%/statuses/%id_str%/">%time%</a>'
+      });
+    </script>
+    
+    <h4>From the mind of an ape</h4>
+    <div id="mtweets"></div>
+    <script type="text/javascript">
+      getTwitters('mtweets', { 
+        id: 'apechimp', 
+        count: 1, 
         enableLinks: true, 
         ignoreReplies: true, 
         clearContents: true,
