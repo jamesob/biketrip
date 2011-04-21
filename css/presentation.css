@@ -22,9 +22,22 @@
   font-family: "Quicksand";
   src: url("/fonts/Quicksand_Light.otf");
 }                           
+
+/* yanked from web.mit.edu/jmorzins/www/palatino.html */
+body { font-family: 
+       "Palatino Linotype", /* Windows */
+       "URW Palladio L",    /* Unix+FontConfig */
+       "palladio l",	    /* Unix+X+freetype */
+       palatino,	    /* Macos */
+       "book antiqua",	    /* Win95 */
+       serif;
+       font-size: 16px;
+}
+
 h1, h2, h3, h4 {
   font-family: "Quicksand";
 }
+
 
 h1 {
   margin-bottom: 40px;
@@ -105,6 +118,7 @@ img.bio {
 }
 
 #nav {
+  font-size: 0.9em;
   padding-right: 20px;
 }
 
