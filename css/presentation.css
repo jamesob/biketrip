@@ -42,7 +42,11 @@ h1 {
   margin-bottom: 40px;
 }
 
-
+ 
+.sectionHead {
+  color: #000;
+}
+   
 #regularMap, #usaMap {
   padding: 5px;
   line-height: 0px;
@@ -105,16 +109,25 @@ img.bio {
   color: #A6CFE3;
   text-decoration: none;
 }
-
+    
 #pageContent a:hover {
   color: #FFA882;
 }
 
 
+/* header */
+
 #headertext {
   font-size: 2em;
   font-family: "Ballpark";
 }
+ 
+#headertext a {
+  color: #F5B657;
+  text-decoration: none;
+}
+       
+/* nav stuff */
 
 #nav {
   font-size: 0.9em;
@@ -134,9 +147,46 @@ img.bio {
   border-bottom: 1px solid #F45945;
 }
 
-#headertext a {
-  color: #F5B657;
-  text-decoration: none;
+/* inner-nav biz */
+
+#inner-nav {
+  -moz-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #C6A49A;
+  background-color: #F2F2EE;
+  color: #555;
+}
+
+#inner-nav ul {
+  padding-left: 10px;
+  margin-left: 0;
+}
+
+#inner-nav a {
+  color: #EEAA88;
+}
+
+#inner-nav a:hover {
+  color: #EEC290;
+}
+
+#innerPageNav {
+  margin-bottom: 40px;
+}
+
+#innerPageNav ul li:before {
+	content: "\00BB \0020";
+} 
+
+#tweets ul, #innerPageNav ul {
+  list-style-type: none;
+}
+
+#tweets li, #innerPageNav li {
+  margin-bottom: 10px;
+  font-size: 0.8em;
 }
 
 #header {

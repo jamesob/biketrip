@@ -1,7 +1,31 @@
 ---
 layout: base
+headScripts: ["/js/twitter.js", "/js/jquery-1.5.2.min.js"]
 ---
- 
+  
+<script type="text/javascript">
+  $(document).ready(function() {
+    /* 
+         if we have h2s on page, create an "on this page" ul
+     */
+    if ($("#content h2").length) {
+      $("#inner-nav").prepend("<div id='innerPageNav'></div>");
+      $("#innerPageNav").append("<h4>On this page</h4>");
+      $("#innerPageNav").append("<ul></ul>");
+    }
+
+    /* 
+       anchor the h2s, fill out the "on this page" ul
+     */
+    $("#content h2").each(function(index) {
+      var link = $(this).text().replace(/\W+/g, '');
+      $(this).wrapInner('<div class="sectionHead" />');
+      $(this).wrapInner('<a class="black" name="'+link+'" />');
+      $("#innerPageNav ul").append("<li><a href=#"+link+'>'+ $(this).text() + "</a></li>");
+    });
+  });
+</script>
+       
 <div id="content">
 
   {{ content }}
@@ -11,4 +35,19 @@ layout: base
 <div id="inner-nav">
   <ul>
   </ul>
+  <div id="twitShite">
+    <h4>Twitbiz</h4>
+    <div id="tweets"></div>
+    <script type="text/javascript">
+      getTwitters('tweets', { 
+        id: 'jamesob', 
+        count: 4, 
+        enableLinks: true, 
+        ignoreReplies: true, 
+        clearContents: true,
+        template: '"%text%"<br /><a href="http://twitter.com/%user_screen_name%/statuses/%id_str%/">%time%</a>'
+      });
+    </script>
+
 </div> 
+                        

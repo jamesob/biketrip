@@ -61,14 +61,21 @@ h1, h2, h3, h4 {
 
 #content {
   float: left;
-  width: 560px;
+  width: 520px;
   padding-right: 20px;
   margin-bottom: 100px;
 }
 
 #inner-nav {
+  padding: 10px;
   float: left;
   width: 200px;
+  margin-bottom: 30px;
+}
+
+#inner-nav h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #bios {
