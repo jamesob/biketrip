@@ -1,18 +1,22 @@
 
+/*
 @font-face {
   font-family: "Hetilica";
   src: url("/fonts/hetilica.ttf");
 }
+*/
 
 @font-face {
   font-family: "Ballpark";
   src: url("/fonts/ballpark.ttf");
 }
 
+/*
 @font-face {
   font-family: "QuicksandBold";
   src: url("/fonts/Quicksand_Bold.otf");
 }               
+*/
                             
 @font-face {
   font-family: "Quicksand";
@@ -129,6 +133,15 @@ img.bio {
 #footer {
   font-size: 0.8em;
   padding-bottom: 100px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #444;
+}
+
+#footer a:hover {
+  color: #888;
 }
 
 #footer ul {

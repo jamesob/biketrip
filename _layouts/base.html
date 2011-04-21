@@ -9,11 +9,9 @@
   <link rel="stylesheet" href="/css/layout.css" type="text/css">
   <link rel="stylesheet" href="/css/presentation.css" type="text/css">
 
-  {% if page.headScripts %}
-    {% for script in page.headScripts %}
+  {% for script in page.headScripts %}
   <script type="text/javascript" src="{{ script }}"></script>
-    {% endfor %}
-  {% endif %}
+  {% endfor %}
 
 </head>
 
@@ -37,7 +35,7 @@
         <a href="/"><li>Home</li></a>
         <a href="/us.html"><li>Meet your hosts</li></a>
         <a href="/route.html"><li>The route</li></a>
-        <a href="/logs"><li>Daily logs</li></a>
+        <a href="/logs.html"><li>Daily logs</li></a>
         <a href="/packlist.html"><li>Expenses and pack list</li></a>
         <a href="/preparing.html"><li>Training</li></a>
         <a href="/links.html"><li>Links</li></a>
@@ -53,16 +51,17 @@
         <div id="mike-contact">
           <ul>
             <li><b>Mike Atkins</b></li>
-            <li>matkins@gmu.edu</li>
+            <li><a href="mailto:matkins@gmu.edu">matkins@gmu.edu</a></li>
           </ul>
         </div>                
 
         <div id="james-contact">
           <ul>
             <li><b>James O'Beirne</b></li>
-            <li>jamesob.nfshost.com</li>
-            <li>james.obeirne@gmail.com</li>
-            <li>twitter.com/jamesob</li>
+            <li><a href="http://jameso.be">jameso.be</a></li>
+            <li><a
+              href="mailto:james.oberine@gmail.com">james.obeirne@gmail.com</a></li>
+            <li><a href="http://twitter.com/jamesob">twitter.com/jamesob</a></li>
           </ul>
         </div>
 
