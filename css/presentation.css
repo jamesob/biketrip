@@ -57,6 +57,10 @@ p {
   line-height: 1.5em;
 }
 
+#content {
+  vertical-align: text-top;
+}
+
 .blockCenter {
   display: block;
   margin-left: auto;
@@ -84,14 +88,14 @@ img.bio {
   right: 0%;
 }
 
-#content a {
+#pageContent a {
   font-weight: bold;
-  color: #6FBA99;
+  color: #A6CFE3;
   text-decoration: none;
 }
 
-#content a:hover {
-  color: #EBA162;
+#pageContent a:hover {
+  color: #FFA882;
 }
 
 
