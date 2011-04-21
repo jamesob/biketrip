@@ -1,5 +1,0 @@
----
-layout: withSidebar
-title: Training
----
-
