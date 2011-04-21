@@ -95,7 +95,7 @@ h1, h2, h3, h4 {
 #usaMap {
   width: 650px;
   height: 400px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 /* footer */
@@ -104,7 +104,7 @@ h1, h2, h3, h4 {
   position: relative;
   z-index: 10;
   height: 3em;
-  margin-top: -3em;
+  margin-top: 100px;
   border-top: 1px solid #CCC;
   padding-top: 20px;
   clear: both;
