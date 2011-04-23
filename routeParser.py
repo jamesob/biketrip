@@ -39,6 +39,8 @@ import simplejson
 from matplotlib import pyplot as pyplt
 
 ELEVATION_BASE_URL = 'http://maps.googleapis.com/maps/api/elevation/json'
+STATICMAP_BASE_URL = 'http://maps.google.com/maps/api/staticmap'
+size = '650x400'
 
 # Program main: Parse a simple Point Placemark and print the coordinates.
 def main():
@@ -73,7 +75,7 @@ def main():
                                 coordDom.get_longitude()
                                 ))
 
-    # Get the coordinates in the format that the Elevation API wants
+    # Get the coordinates in the format that the Google APIs want
     coordinatesString = [coordToString(coord) for coord in coordinates]
     coordinatesString = reduce(coordJoinFunc, coordinatesString)
 
@@ -84,6 +86,8 @@ def main():
     pyplt.xticks([])
     pyplt.ylabel('Elevation in Feet')
     pyplt.savefig('images/eleprof/usa.png')
+
+    saveStaticMap('images/maps/usa.png',coordinatesString, size)
 
 
 def getElevation(path,
@@ -102,6 +106,18 @@ def getElevation(path,
         response['results']]
     return elevations
 
+def saveStaticMap(filename,
+                 path,
+                 size,
+                 sensor="false",
+                 **maps_args):
+
+    maps_args.update({'path': path,
+                      'size': size,
+                      'sensor': sensor
+                      })
+    url = STATICMAP_BASE_URL + '?' + urllib.urlencode(maps_args)
+    urllib.urlretrieve(url,filename)
   
 def coordToString(coord):
     return '%0.5f,%0.5f' % coord
