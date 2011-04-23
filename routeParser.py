@@ -36,6 +36,7 @@ import kmldom
 import kmlengine
 import urllib
 import simplejson
+import string
 from matplotlib import pyplot as pyplt
 
 ELEVATION_BASE_URL = 'http://maps.googleapis.com/maps/api/elevation/json'
@@ -94,7 +95,7 @@ def parseKML(kml):
 
     # Get the coordinates in the format that the Google APIs want
     coordinatesString = [coordToString(coord) for coord in coordinates]
-    coordinatesString = reduce(coordJoinFunc, coordinatesString)
+    coordinatesString = string.join(coordinatesString, '|')
 
     return coordinatesString
 
@@ -166,10 +167,6 @@ def saveStaticMap(filename,
   
 def coordToString(coord):
     return '%0.5f,%0.5f' % coord
-
-def coordJoinFunc(coord1,
-                  coord2):
-    return coord1 + '|' + coord2
 
 if __name__ == '__main__':
   main()
