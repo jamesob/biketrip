@@ -98,7 +98,6 @@ def parseKML(kml):
                 coordinates.append([])
                 print len(coordinates[-2])
 
-    print coordCounter
     paths = []
     for coords in coordinates:
     # Get the coordinates in the format that the Google APIs want
@@ -120,7 +119,6 @@ def getElevation(path,
                        'sensor': sensor
                        })
     url = ELEVATION_BASE_URL + '?' + urllib.urlencode(elvtn_args)
-    print urllib.urlopen(url).read()
     response = simplejson.load(urllib.urlopen(url))
 
     elevations = [resultdict['elevation'] for resultdict in
