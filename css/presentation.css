@@ -168,6 +168,10 @@ img.bio {
   color: #555;
 }
 
+#inner-nav h4 a, #inner-nav h4 a:hover {
+  color: #555;
+}
+
 #inner-nav ul {
   padding-left: 10px;
   margin-left: 0;
@@ -188,6 +192,10 @@ img.bio {
 #innerPageNav ul li:before {
 	content: "\00BB \0020";
 } 
+
+#jtweets, #mtweets {
+  margin-bottom: 20px;
+}
 
 #jtweets ul, #mtweets ul, #innerPageNav ul {
   list-style-type: none;
