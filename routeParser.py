@@ -53,7 +53,7 @@ def main():
 
     elevations = []
     for path in paths:
-        elevations.append(getElevation(path, samples=250))
+        elevations += getElevation(path, samples=250)
     saveElevation('test.png',elevations, size)
 
 def parseKML(kml):
