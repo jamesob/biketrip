@@ -97,6 +97,9 @@ def parseKML(kml):
             if coordCounter % 50 == 0:
                 coordinates.append([])
 
+    if coordCounter >= 25000:
+        raise Exception('Too many coordinates for Elevation API.')
+
     paths = []
     for coords in coordinates:
     # Get the coordinates in the format that the Google APIs want
