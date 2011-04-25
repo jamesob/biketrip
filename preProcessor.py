@@ -34,7 +34,7 @@ them.
 
 import sys
 import urllib
-import routeParser
+from routeParser import getElevations, saveElevation, parseKML
 
 def main():
     filename = sys.argv[1]
@@ -53,17 +53,44 @@ def main():
         if not argsDict.has_key('date'):
             print("date specification is manditiory")
             sys.exit(1)
-        elefilename = "images/eleprof/"+ argsDict.date + ".png"
+        if not argsDict.has_key('title'):
+            print("title specification is manditiory")
+            sys.exit(1)
+
+        elefilename = "images/eleprof/"+ argsDict['date'] + ".png"
+        argsDict.update({'elefilename': elefilename})
+
+        paths = argsDict['paths']
+        size  = argsDict['size']
+
+        elevations = getElevations(paths, samples=250)
+        saveElevation(elefilename, elevations, size)
+
+        html = makeHTML(**argsDict)
+        index = lines.index(line)
+        lines[index] = html
+
+    outfile = open("_posts/%s-%s.html" % \
+                   (argsDict['date'],argsDict['title']), 
+                   'w')
+    outfile.writelines(lines)
 
 
-
+def makeHTML(**kwargs):
+    return '<div id="regularMap"/>\n' +\
+           '<script type="text/javascript">\n' +\
+           '   initializeMap("regularEle");\n' +\
+           '   loadKML("%s");\n' % kwargs['mapLoc'] +\
+           '</script>' +\
+           '<img id="regularEle" class="elevation" src="/%s"/>\n' %\
+               kwargs['elefilename']
 
 def parseLine(line):
     line = line[3:]
     argsDict = eval(line)
     kml = getKML(argsDict['mapLoc'])
-    path = routeParser.parseKML(kml)
-    argsDict.update({'path': path})
+    paths = parseKML(kml)
+    argsDict.update({'paths': paths})
     return argsDict
 
 def getKML(url):
