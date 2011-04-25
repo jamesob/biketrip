@@ -92,6 +92,10 @@ img.elevation {
   box-shadow: 2px 2px 4px #333;
 }
 
+#regularEle {
+    height: 400px;
+}
+
 img.bio {
   padding: 5px;
   line-height: 0px;
