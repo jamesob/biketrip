@@ -51,9 +51,7 @@ def main():
 
     paths = parseKML(kml)
 
-    elevations = []
-    for path in paths:
-        elevations += getElevation(path, samples=250)
+    elevations = getElevations(paths, samples=250)
     saveElevation('test.png',elevations, size)
 
 def parseKML(kml):
@@ -108,6 +106,21 @@ def parseKML(kml):
         paths.append(coordinatesString)
 
     return paths
+
+def getElevations(paths,
+                 samples="100",
+                 sensor="false",
+                 **elvtn_args):
+    """Uses the Google Elevation API to return an array of elevations. This 
+    array will be as long as specified in samples."""
+    elevations = []
+    for path in paths:
+        elvtn_args.update({'path': path,
+                           'samples': samples,
+                           'sensor': sensor
+                           })
+        elevations += getElevation(**elvtn_args)
+    return elevations
 
 def getElevation(path,
                  samples="100",
