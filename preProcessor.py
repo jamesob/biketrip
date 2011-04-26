@@ -79,7 +79,7 @@ def main():
 def makeHTML(**kwargs):
     return '<div id="regularMap"/>\n' +\
            '<script type="text/javascript">\n' +\
-           '   initializeMap("regularEle");\n' +\
+           '   initializeMap("regularMap");\n' +\
            '   loadKML("%s");\n' % kwargs['mapLoc'] +\
            '</script>' +\
            '<img id="regularEle" class="elevation" src="/%s"/>\n' %\
