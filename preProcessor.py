@@ -57,9 +57,12 @@ def main():
                 beforePPD + \
                 html + \
                 afterPPD
+        
+    outFileName = "_posts/%s-%s.html" % \
+                   (argsDict['date'],argsDict['title'])
+    outFileName = outFileName.replace(' ','')
 
-    outfile = open("_posts/%s-%s.html" % \
-                   (argsDict['date'],argsDict['title']), 
+    outfile = open(outFileName, 
                    'w')
     outfile.write(outString)
     outfile.close()
