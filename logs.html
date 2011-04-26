@@ -1,0 +1,16 @@
+---
+layout: withSidebar
+title: AHAT daily log
+---
+
+<ul class="daily-posts">
+  {% for post in site.categories.daily %}
+  <li>
+    <h3>{{ post.title }}</h3>
+    <div class="dayDescription">
+      <p>{{ post.content | prettyprint | truncate: 200 }}... 
+      <b><a href="{{ post.url }}">read more</a></b>.
+    </div>
+  </li>
+  {% endfor %}
+</ul>

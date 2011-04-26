@@ -1,0 +1,153 @@
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+h1, h2, h3, h4 {
+  clear: both;
+}
+
+#page, #footer {
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0
+}
+
+/* header */
+
+#header {
+  display: block;
+}
+
+#headertext {
+  padding: 80px 0px 10px 20px;
+}
+
+/* nav */
+
+#nav {
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+#nav ul {
+  margin-left: 30px;
+}
+
+#nav li {
+  padding: 5px;
+  display: inline;
+  float: left;
+  margin-left: 1em;
+}
+
+#nav li a {
+  display: inline;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* content */
+
+#pageContent {
+  padding-left: 20px;
+}
+
+#content {
+  float: left;
+  width: 520px;
+  padding-right: 20px;
+  margin-bottom: 100px;
+}
+
+#inner-nav {
+  padding: 10px;
+  float: left;
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+#inner-nav h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#bios {
+  width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mike-bio, #james-bio {
+  float: left;
+  width: 250px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 100px;
+}
+
+#mike-bio {
+  text-align: right;
+}
+
+#regularMap {
+  width: 400px;
+  height: 400px;
+}
+
+#usaMap, #usaEle {
+  width: 650px;
+  margin-bottom: 20px;
+}
+
+#usaMap {
+  height: 400px;
+}
+
+/* footer */
+
+#footer {
+  position: relative;
+  z-index: 10;
+  height: 3em;
+  margin-top: 100px;
+  border-top: 1px solid #CCC;
+  padding-top: 20px;
+  clear: both;
+}
+
+#footer #contacts {
+  text-align: left;
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mike-contact, #james-contact {
+  width: 200px;
+  float: left;
+}
+
+#mike-contact {
+  width: 150px;
+}
+
+#james-contact {
+  margin-right: 40px;
+}
+
+#github {
+  width: 200px;
+  float: left;
+}
+
+
+
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>{{ page.title }}</title>
+  <meta name="author" content="James O'Beirne" />
+  <meta name="author" content="Mike Atkins" />
+ 
+  <link rel="stylesheet" href="/css/layout.css" type="text/css">
+  <link rel="stylesheet" href="/css/presentation.css" type="text/css">
+
+  {% for script in page.headScripts %}
+  <script type="text/javascript" src="{{ script }}"></script>
+  {% endfor %}
+
+</head>
+
+{% if page.onload %}
+<body onload="{{ page.onload }}">
+{% else %}
+<body>
+{% endif %}
+   
+
+  <div id="page">
+    <div id="header">
+      <div id="headertext">
+
+        <a href="/">Ad Hoc<br />Adventure<br />Time</a>
+      </div>
+    </div>
+
+    <div id="nav">
+      <ul>
+        <a href="/"><li>Home</li></a>
+        <a href="/us.html"><li>Meet your hosts</li></a>
+        <a href="/route.html"><li>The route</li></a>
+        <a href="/logs.html"><li>Daily logs</li></a>
+        <a href="/packlist.html"><li>Gear, cost, and packing</li></a>
+        <a href="/preparing.html"><li>Training</li></a>
+        <a href="/links.html"><li>Links</li></a>
+      </ul>
+    </div>
+
+    <div id="pageContent">
+    {{ content }}
+    </div>
+ 
+    <div id="footer">
+
+      <div id="contacts">
+
+        <div id="mike-contact">
+          <ul>
+            <li><b>Mike Atkins</b></li>
+            <li><a href="mailto:matkins@gmu.edu">matkins@gmu.edu</a></li>
+          </ul>
+        </div>                
+
+        <div id="james-contact">
+          <ul>
+            <li><b>James O'Beirne</b></li>
+            <li><a href="http://jameso.be">jameso.be</a></li>
+            <li><a
+              href="mailto:james.oberine@gmail.com">james.obeirne@gmail.com</a></li>
+            <li><a href="http://twitter.com/jamesob">twitter.com/jamesob</a></li>
+          </ul>
+        </div>
+
+        <div id="github">
+          
+          <p>This project is generously hosted by 
+          <a href="http://github.com">GitHub</a> and powered by 
+          <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
+          All source is open and <a
+            href="http://github.com/jamesob/biketrip">available here</a>.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
+
