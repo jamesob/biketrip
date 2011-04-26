@@ -1,17 +1,17 @@
 ---
-layout: putsomerandomstringhere
+layout: nil
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 	<channel>
-		<title>jamesob</title>
-		<description>Mostly computing.</description>
-        <link>http://jamesob.nfshost.com/</link>
+		<title>Ad Hoc Adventure Time</title>
+		<description>Bicycle trip to San Francisco.</description>
+        <link>http://ahadventure.us/</link>
 		{% for post in site.posts %}
 			<item>
 				<title>{{ post.title }}</title>
 				<description>{{ post.content | truncate: 200 | xml_escape }}</description>
-				<link>http://jamesob.nfshost.com/{{ post.url }}</link>
+				<link>http://ahadventure.us/{{ post.url }}</link>
 			</item>
 		{% endfor %}
 	</channel>
