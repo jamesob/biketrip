@@ -34,6 +34,7 @@ def main():
     parselines = [line for line in lines if line[:3] == '%%%']
     assert len(parselines) == 1
     line = parselines[0]
+
     if verbose:
         print("Parsing line.")
     argsDict = parseLine(line)
