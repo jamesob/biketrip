@@ -1,42 +1,14 @@
 #!/usr/bin/env python2
 
-"""load up post via file.open
-
-readlines it
-
-iterate through the readlines until a line is found which starts with %%% or
-something
-
-eval the line after removing the %%% while making a note of the index we are
-at in the readlines, call this index i
-
-pray that the line contains a dictionary of useful stuff like
-    date
-    mapUrl(kml)
-    CSSTags like sizes?
-
-download the kml and do a .read() on it
-
-parse the kml
-
-generate elevation profile & map (save based on date)
-
-generate the html to present these two images
-
-replace the readlines[i] with this generated html code
-
-write the preprocessed file
-
-EXTRA write a script which will call the preprocessor, figureout from the
-preprocessor which files need to be staged, stage them, commit them and push
-them.
-"""
-
 import sys
 import urllib
 from routeParser import getElevations, saveElevation, parseKML
 
 def main():
+    """Read the file whose name is specified as a command-line argument. Parse
+    it, substitute text which has a '%%%' flag at the beginning of a line.
+    Write the preprocessed file to a hardcoded position."""
+
     filename = sys.argv[1]
     try:
         infile = open(filename, 'r')
@@ -77,6 +49,9 @@ def main():
 
 
 def makeHTML(**kwargs):
+    """Make the html which corresponds to the dictionary. This is hardcoded to
+    use our pre decided divs."""
+
     return '<div id="regularMap"/>\n' +\
            '<script type="text/javascript">\n' +\
            '   initializeMap("regularMap");\n' +\
@@ -86,6 +61,11 @@ def makeHTML(**kwargs):
                kwargs['elefilename']
 
 def parseLine(line):
+    """Parse the line by removing the first three characters, evaling the line,
+    which hopefully will eval to a dictionary, getting the kml from the from
+    the url, parsing that into paths and loading that into the returned
+    dictionary."""
+
     line = line[3:]
     argsDict = eval(line)
     kml = getKML(argsDict['mapLoc'])
@@ -94,6 +74,9 @@ def parseLine(line):
     return argsDict
 
 def getKML(url):
+    """Open the url and get return a string which hopefully contains some
+    KML."""
+    
     kmlfile = urllib.urlopen(url)
     kml = kmlfile.read()
     return kml
