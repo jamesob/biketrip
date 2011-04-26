@@ -15,6 +15,7 @@ def main():
     try:
         infile = open(filename, 'r')
         lines = infile.readlines()
+        infile.close()
     except:
         print("Could not open file: %s" % filename)
     
@@ -61,13 +62,22 @@ def main():
     header = string.join(lines[beginHeader:endHeader], '')
     beforePPD = string.join(lines[endHeader:index], '')
     afterPPD = string.join(lines[index:], '')
+
+    beforeHeader = markdown.markdown(beforeHeader)
+    beforePPD = markdown.markdown(beforePPD)
+    afterPPD = markdown.markdown(afterPPD)
     
-#TODO Apply Markdown to before/afterstuff, then join everything and write it!
+    outString = beforeHeader + \
+                header + \
+                beforePPD + \
+                html + \
+                afterPPD
 
     outfile = open("_posts/%s-%s.html" % \
                    (argsDict['date'],argsDict['title']), 
                    'w')
-    outfile.writelines(lines)
+    outfile.write(outString)
+    outfile.close()
 
 
 def makeHTML(**kwargs):
