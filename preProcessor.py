@@ -3,6 +3,8 @@
 import sys
 import urllib
 from routeParser import getElevations, saveElevation, parseKML
+import string
+import markdown
 
 def main():
     """Read the file whose name is specified as a command-line argument. Parse
@@ -15,32 +17,52 @@ def main():
         lines = infile.readlines()
     except:
         print("Could not open file: %s" % filename)
-
+    
+    # Figure out where the Jekyll header is situated.
+    inHeader = 0
+    beginHeader = 0
+    endHeader = 0
+    for line in lines:
+        if line[:3] == '---':
+            inHeader +=1
+        endHeader +=1
+        if inHeader == 2:
+            break
+        if inHeader != 1:
+            beginHeader +=1
+        
     parselines = [line for line in lines if line[:3] == '%%%']
-    for line in parselines:
-        argsDict = parseLine(line)
-        if not argsDict.has_key('size'):
-            print("size specification is manditiory")
-            sys.exit(1)
-        if not argsDict.has_key('date'):
-            print("date specification is manditiory")
-            sys.exit(1)
-        if not argsDict.has_key('title'):
-            print("title specification is manditiory")
-            sys.exit(1)
+    assert len(parselines) == 1
+    line = parselines[0]
+    argsDict = parseLine(line)
+    if not argsDict.has_key('size'):
+        print("size specification is manditiory")
+        sys.exit(1)
+    if not argsDict.has_key('date'):
+        print("date specification is manditiory")
+        sys.exit(1)
+    if not argsDict.has_key('title'):
+        print("title specification is manditiory")
+        sys.exit(1)
 
-        elefilename = "images/eleprof/"+ argsDict['date'] + ".png"
-        argsDict.update({'elefilename': elefilename})
+    elefilename = "images/eleprof/"+ argsDict['date'] + ".png"
+    argsDict.update({'elefilename': elefilename})
 
-        paths = argsDict['paths']
-        size  = argsDict['size']
+    paths = argsDict['paths']
+    size  = argsDict['size']
 
-        elevations = getElevations(paths, samples=250)
-        saveElevation(elefilename, elevations, size)
+    elevations = getElevations(paths, samples=250)
+    saveElevation(elefilename, elevations, size)
 
-        html = makeHTML(**argsDict)
-        index = lines.index(line)
-        lines[index] = html
+    html = makeHTML(**argsDict)
+    index = lines.index(line)
+
+    beforeHeader = string.join(lines[:beginHeader], '')
+    header = string.join(lines[beginHeader:endHeader], '')
+    beforePPD = string.join(lines[endHeader:index], '')
+    afterPPD = string.join(lines[index:], '')
+    
+#TODO Apply Markdown to before/afterstuff, then join everything and write it!
 
     outfile = open("_posts/%s-%s.html" % \
                    (argsDict['date'],argsDict['title']), 
