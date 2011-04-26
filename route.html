@@ -6,9 +6,12 @@ headScripts: ["http://maps.google.com/maps/api/js?sensor=false",
 ---
 <h2>Our Route</h2>
 
-<div id="usaMap" class="blockCenter">
-    <img src="images/maps/usa.png"/>
-</div>
+<div id="usaMap" class="blockCenter"></div>
+
+<script type="text/javascript">
+    initializeMap('usaMap', 8);
+    loadKML('http://maps.google.com/maps/ms?hl=en&ie=UTF8&msa=0&msid=203384579587508079739.0004a13c28b9b49f602a3&ll=27.527758,-93.955078&spn=94.094032,71.806641&z=4&lci=bike&output=kml');
+</script>
 
 <img id="usaEle" class="elevation blockCenter" src="images/eleprof/usa.png"/>
 
