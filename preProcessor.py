@@ -14,6 +14,14 @@ def main():
     _posts directory with the filename taken from the title and date keys of 
     the parsed dictionary."""
 
+    if len(sys.argv) != 2 or len(sys.argv) != 3:
+        print("Usage: preProcessor filename [-v]")
+        sys.exit(1)
+
+    verbose = False
+    if sys.argv[2] == '-v':
+        verbose = True
+    
     filename = sys.argv[1]
     try:
         infile = open(filename, 'r')
@@ -26,6 +34,8 @@ def main():
     parselines = [line for line in lines if line[:3] == '%%%']
     assert len(parselines) == 1
     line = parselines[0]
+    if verbose:
+        print("Parsing line.")
     argsDict = parseLine(line)
 
     elefilename = "images/eleprof/"+ argsDict['date'] + ".png"
@@ -34,11 +44,16 @@ def main():
     paths = argsDict['paths']
     size  = argsDict['size']
 
-    # Generate elevation profile and save it.
+    if verbose:
+        print("Generating elevation profile.")
     elevations = getElevations(paths, samples=250)
+
+    if verbose:
+        print("Saving elevation profile.")
     saveElevation(elefilename, elevations, size)
 
-    # Generate html to store map and elevation profile.
+    if verbose:
+        print("Generating HTML")
     html = makeHTML(**argsDict)
     index = lines.index(line)
 
@@ -46,11 +61,13 @@ def main():
     beforePPD = string.join(lines[:index], '')
     afterPPD = string.join(lines[index:], '')
 
-    # Apply markdown!
+    if verbose:
+        print("Applying Markdown.")
     beforePPD = markdown.markdown(beforePPD)
     afterPPD = markdown.markdown(afterPPD)
 
-    # Make header for Jekyll
+    if verbose:
+        print("Generating header for jekyll.")
     header = makeHeader(**argsDict)
     
     outString = header + \
@@ -62,6 +79,8 @@ def main():
                    (argsDict['date'],argsDict['title'])
     outFileName = outFileName.replace(' ','')
 
+    if verbose:
+        print("Writing output file.")
     outfile = open(outFileName, 
                    'w')
     outfile.write(outString)
