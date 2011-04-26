@@ -101,10 +101,13 @@ h1, h2, h3, h4 {
   height: 400px;
 }
 
-#usaMap {
+#usaMap, #usaEle {
   width: 650px;
-  height: 400px;
   margin-bottom: 20px;
+}
+
+#usaMap {
+  height: 400px;
 }
 
 /* footer */
