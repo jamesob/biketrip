@@ -9,7 +9,10 @@ import markdown
 def main():
     """Read the file whose name is specified as a command-line argument. Parse
     it, substitute text which has a '%%%' flag at the beginning of a line.
-    Write the preprocessed file to a hardcoded position."""
+    Also, it will apply markdown to the rest of the input document as well as
+    adding a header for jekyll to read.  Write the preprocessed file to the 
+    _posts directory with the filename taken from the title and date keys of 
+    the parsed dictionary."""
 
     filename = sys.argv[1]
     try:
@@ -18,33 +21,12 @@ def main():
         infile.close()
     except:
         print("Could not open file: %s" % filename)
+        sys.exit(1)
     
-    # Figure out where the Jekyll header is situated.
-    inHeader = 0
-    beginHeader = 0
-    endHeader = 0
-    for line in lines:
-        if line[:3] == '---':
-            inHeader +=1
-        endHeader +=1
-        if inHeader == 2:
-            break
-        if inHeader != 1:
-            beginHeader +=1
-        
     parselines = [line for line in lines if line[:3] == '%%%']
     assert len(parselines) == 1
     line = parselines[0]
     argsDict = parseLine(line)
-    if not argsDict.has_key('size'):
-        print("size specification is manditiory")
-        sys.exit(1)
-    if not argsDict.has_key('date'):
-        print("date specification is manditiory")
-        sys.exit(1)
-    if not argsDict.has_key('title'):
-        print("title specification is manditiory")
-        sys.exit(1)
 
     elefilename = "images/eleprof/"+ argsDict['date'] + ".png"
     argsDict.update({'elefilename': elefilename})
@@ -52,23 +34,26 @@ def main():
     paths = argsDict['paths']
     size  = argsDict['size']
 
+    # Generate elevation profile and save it.
     elevations = getElevations(paths, samples=250)
     saveElevation(elefilename, elevations, size)
 
+    # Generate html to store map and elevation profile.
     html = makeHTML(**argsDict)
     index = lines.index(line)
 
-    beforeHeader = string.join(lines[:beginHeader], '')
-    header = string.join(lines[beginHeader:endHeader], '')
-    beforePPD = string.join(lines[endHeader:index], '')
+    # Get the text other than the preprocessed line
+    beforePPD = string.join(lines[:index], '')
     afterPPD = string.join(lines[index:], '')
 
-    beforeHeader = markdown.markdown(beforeHeader)
+    # Apply markdown!
     beforePPD = markdown.markdown(beforePPD)
     afterPPD = markdown.markdown(afterPPD)
+
+    # Make header for Jekyll
+    header = makeHeader(**argsDict)
     
-    outString = beforeHeader + \
-                header + \
+    outString = header + \
                 beforePPD + \
                 html + \
                 afterPPD
@@ -79,6 +64,13 @@ def main():
     outfile.write(outString)
     outfile.close()
 
+def makeHeader(**kwargs):
+    """Make the header which jekyll will read to generate the page."""
+    return '---\n' +\
+           'layout: log\n' +\
+           'title: %s\n' % kwargs['title'] +\
+           'category: daily\n' +\
+           '---\n'
 
 def makeHTML(**kwargs):
     """Make the html which corresponds to the dictionary. This is hardcoded to
@@ -100,6 +92,21 @@ def parseLine(line):
 
     line = line[3:]
     argsDict = eval(line)
+
+    # There are a few things which need to be specified.
+    if not argsDict.has_key('size'):
+        print("size specification is manditiory")
+        sys.exit(1)
+    if not argsDict.has_key('date'):
+        print("date specification is manditiory")
+        sys.exit(1)
+    if not argsDict.has_key('title'):
+        print("title specification is manditiory")
+        sys.exit(1)
+    if not argsDict.has_key('mapLoc'):
+        print("mapLoc specification is manditiory")
+        sys.exit(1)
+
     kml = getKML(argsDict['mapLoc'])
     paths = parseKML(kml)
     argsDict.update({'paths': paths})
