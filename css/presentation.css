@@ -77,6 +77,10 @@ p {
   vertical-align: text-top;
 }
 
+#content ul p {
+  line-height: 1.5em;
+}
+
 .blockCenter {
   display: block;
   margin-left: auto;
