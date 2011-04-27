@@ -4,17 +4,15 @@ import sys
 import urllib
 from routeParser import getElevations, saveElevation, parseKML
 import string
-import markdown
 
 def main():
-    """Read the file whose name is specified as a command-line argument. Parse
-    it, substitute text which has a '%%%' flag at the beginning of a line.
-    Also, it will apply markdown to the rest of the input document as well as
-    adding a header for jekyll to read.  Write the preprocessed file to the 
-    _posts directory with the filename taken from the title and date keys of 
-    the parsed dictionary."""
-
-    if len(sys.argv) < 2 or len(sys.argv) > 3:
+    """Reads the file whose name is specified as a command-line argument.
+    Parses the line which has a '%%%' flag at the beginning of a line.  
+    generates an elevation profile and a header for jekyll to read will be 
+    generated.  Write the preprocessed file to the _posts directory with the 
+    filename taken from the title and date keys of the parsed dictionary.""" 
+    
+    if len(sys.argv) < 2 or len(sys.argv) > 3: 
         print("Usage: preProcessor filename [-v]")
         sys.exit(1)
 
@@ -40,7 +38,8 @@ def main():
     argsDict = parseLine(line)
 
     elefilename = "images/eleprof/"+ argsDict['date'] + ".png"
-    argsDict.update({'elefilename': elefilename})
+    argsDict.update({'elefilename': elefilename,
+                     'eleURL': '/' + elefilename})
 
     paths = argsDict['paths']
     size  = argsDict['size']
@@ -53,30 +52,18 @@ def main():
         print("Saving elevation profile.")
     saveElevation(elefilename, elevations, size)
 
-    if verbose:
-        print("Generating HTML")
-    html = makeHTML(**argsDict)
-    index = lines.index(line)
-
+    
     # Get the text other than the preprocessed line
-    beforePPD = string.join(lines[:index], '')
-    afterPPD = string.join(lines[index:], '')
-
-    if verbose:
-        print("Applying Markdown.")
-    beforePPD = markdown.markdown(beforePPD)
-    afterPPD = markdown.markdown(afterPPD)
+    lines.remove(line)
+    content = string.join(lines, '')
 
     if verbose:
         print("Generating header for jekyll.")
     header = makeHeader(**argsDict)
     
-    outString = header + \
-                beforePPD + \
-                html + \
-                afterPPD
+    outString = header + content
         
-    outFileName = "_posts/%s-%s.html" % \
+    outFileName = "_posts/%s-%s.md" % \
                    (argsDict['date'],argsDict['title'])
     outFileName = outFileName.replace(' ','')
 
@@ -92,20 +79,11 @@ def makeHeader(**kwargs):
     return '---\n' +\
            'layout: log\n' +\
            'title: %s\n' % kwargs['title'] +\
+           'author: %s\n' % kwargs['author'] +\
            'category: daily\n' +\
-           '---\n'
-
-def makeHTML(**kwargs):
-    """Make the html which corresponds to the dictionary. This is hardcoded to
-    use our pre decided divs."""
-
-    return '<div id="regularMap"/>\n' +\
-           '<script type="text/javascript">\n' +\
-           '   initializeMap("regularMap");\n' +\
-           '   loadKML("%s");\n' % kwargs['mapLoc'] +\
-           '</script>' +\
-           '<img id="regularEle" class="elevation" src="/%s"/>\n' %\
-               kwargs['elefilename']
+           'mapURL: "%s"\n' % kwargs['mapURL'] +\
+           'eleURL: "%s"\n' % kwargs['eleURL'] +\
+           '---\n\n'
 
 def parseLine(line):
     """Parse the line by removing the first three characters, evaling the line,
@@ -126,11 +104,14 @@ def parseLine(line):
     if not argsDict.has_key('title'):
         print("title specification is manditiory")
         sys.exit(1)
-    if not argsDict.has_key('mapLoc'):
-        print("mapLoc specification is manditiory")
+    if not argsDict.has_key('mapURL'):
+        print("mapURL specification is manditiory")
+        sys.exit(1)
+    if not argsDict.has_key('author'):
+        print("author specification is manditiory")
         sys.exit(1)
 
-    kml = getKML(argsDict['mapLoc'])
+    kml = getKML(argsDict['mapURL'])
     paths = parseKML(kml)
     argsDict.update({'paths': paths})
     return argsDict
