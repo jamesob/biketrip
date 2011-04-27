@@ -110,6 +110,36 @@ h1, h2, h3, h4 {
   height: 400px;
 }
 
+/* logs */
+
+#logImgs {
+  width: 460px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 210px;
+}
+
+#logMap {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+}
+
+#logEle img {
+  margin-left: 10px;
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
+#logText {
+  clear: both;
+}
+
 /* footer */
 
 #footer {

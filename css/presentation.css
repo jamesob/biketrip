@@ -47,7 +47,7 @@ h1 {
   color: #000;
 }
    
-#regularMap, #usaMap {
+#regularMap, #usaMap, .dropBorder {
   padding: 5px;
   line-height: 0px;
   border: 1px solid #888;

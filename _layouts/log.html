@@ -3,5 +3,21 @@ layout: withSidebar
 ---
 
 <h2>{{ page.title }}</h2>
+<h4>by {{ page.author }}</h4>
 
+<div id="logImgs">
+  <div id="logMap" class="dropBorder"></div>
+
+  <div id="logEle">
+    <img id="regularEle" class="elevation" src="{{ page.eleURL }}" /> 
+  </div>
+</div>
+
+<script type="text/javascript">
+   initializeMap("logMap");
+   loadKML("{{ page.mapURL }}&output=kml");
+</script> 
+
+<div id="logText">
 {{ content }}
+</div>
