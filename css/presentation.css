@@ -173,7 +173,8 @@ img.bio {
   -moz-border-radius: 10px;
   border-radius: 10px;
   border-radius: 10px;
-  border: 1px solid #C6A49A;
+  /* border: 1px solid #C6A49A; */
+  border: 1px solid #AAA;
   background-color: #F2F2EE;
   color: #555;
 }
@@ -235,11 +236,11 @@ img.bio {
 
 #footer a {
   text-decoration: none;
-  color: #888;
+  color: #AAA;
 }
 
 #footer a:hover {
-  color: #DDD;
+  color: #CCC;
 }
 
 #footer ul {
@@ -256,10 +257,10 @@ img.bio {
 }
 
 #github {
-  color: #555;
+  color: #999;
 }
  
 #github a {
-  color: #8C6354;
+  color: #AC8374;
 }
  
