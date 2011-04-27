@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# A pre-commit hook which will call our preProcessor on newly added posts then
+# add the generated files to the commit.
+#
+
+for post in `git diff --cached --name-only posts`
+do
+    preProcessor $post -v
+    git add _posts/*
+    git add images/eleprof/*
+done
