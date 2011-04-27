@@ -8,7 +8,7 @@ title: AHAT daily log
   <li>
     <h3>{{ post.title }}</h3>
     <div class="dayDescription">
-      <p>{{ post.content | prettyprint | truncate: 200 }}... 
+      <p>{{ post.content | strip_newlines | truncate: 200 }}
       <b><a href="{{ post.url }}">read more</a></b>.
     </div>
   </li>
