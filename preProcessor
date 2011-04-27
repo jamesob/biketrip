@@ -17,8 +17,9 @@ def main():
         sys.exit(1)
 
     verbose = False
-    if sys.argv[2] == '-v':
-        verbose = True
+    if len(sys.argv) == 3:
+        if sys.argv[2] == '-v':
+            verbose = True
     
     filename = sys.argv[1]
     try:
