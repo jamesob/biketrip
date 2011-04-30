@@ -1,6 +1,7 @@
 #!/usr/bin/env python2
 
 import sys
+import argparse
 import urllib
 from routeParser import getElevations, saveElevation, parseKML
 import string
@@ -11,22 +12,29 @@ def main():
     generates an elevation profile and a header for jekyll to read will be 
     generated.  Write the preprocessed file to the _posts directory with the 
     filename taken from the title and date keys of the parsed dictionary.""" 
-    
-    if len(sys.argv) < 2 or len(sys.argv) > 3: 
-        print("Usage: preProcessor filename [-v]")
-        sys.exit(1)
+ 
+    def vPrint(string):
+        if args.verbose:
+            print(string)
+       
+    DESC="KML processing tool to visualize saved route data"
+    p = argparse.ArgumentParser(description=DESC)
 
-    verbose = False
-    if len(sys.argv) == 3:
-        if sys.argv[2] == '-v':
-            verbose = True
+    p.add_argument('filename', type=str,
+                   nargs=1, help='the post to be processed')
+    p.add_argument('-v', '--verbose', action ='store_true', dest='verbose',
+                   help='enables verbose output')
+    p.add_argument('-r', '--regraph', action ='store_true', dest='regraph',
+                   help='regenerate graphs from cached ele data')
     
-    filename = sys.argv[1]
+    args = p.parse_args()
+
+    filename = args.filename[0]
     try:
         infile = open(filename, 'r')
         lines = infile.readlines()
         infile.close()
-    except:
+    except:                                  
         print("Could not open file: %s" % filename)
         sys.exit(1)
     
@@ -34,32 +42,34 @@ def main():
     assert len(parselines) == 1
     line = parselines[0]
 
-    if verbose:
-        print("Parsing line.")
+    vPrint("Parsing line.")
     argsDict = parseLine(line)
 
-    elefilename = "images/eleprof/"+ argsDict['date'] + ".png"
-    argsDict.update({'elefilename': elefilename,
-                     'eleURL': '/' + elefilename})
+    eleDataFilename = "eleData/" + argsDict['date'] + ".txt"
+    elePngFilename = "images/eleprof/"+ argsDict['date'] + ".png"
+    argsDict.update({'elefilename': elePngFilename,
+                     'eleURL': '/' + elePngFilename})
 
     paths = argsDict['paths']
     size  = argsDict['size']
 
-    if verbose:
-        print("Generating elevation profile.")
-    elevations = getElevations(paths, samples=250)
+    vPrint("Generating elevation profile.")
 
-    if verbose:
-        print("Saving elevation profile.")
-    saveElevation(elefilename, elevations, size)
+    if args.regraph:
+        elevations = getCachedEleData(eleDataFilename)
+    else:
+        elevations = getElevations(paths, samples=250)
+        vPrint("Caching elevation results.")
+        cacheEleData(eleDataFilename, elevations)
 
+    vPrint("Saving elevation profile.")
+    saveElevation(elePngFilename, elevations, size)
     
     # Get the text other than the preprocessed line
     lines.remove(line)
     content = string.join(lines, '')
 
-    if verbose:
-        print("Generating header for jekyll.")
+    vPrint("Generating header for jekyll.")
     header = makeHeader(**argsDict)
     
     outString = header + content
@@ -68,10 +78,8 @@ def main():
                    (argsDict['date'],argsDict['title'])
     outFileName = outFileName.replace(' ','')
 
-    if verbose:
-        print("Writing output file.")
-    outfile = open(outFileName, 
-                   'w')
+    vPrint("Writing output file.")
+    outfile = open(outFileName, 'w')
     outfile.write(outString)
     outfile.close()
 
@@ -97,19 +105,19 @@ def parseLine(line):
 
     # There are a few things which need to be specified.
     if not argsDict.has_key('size'):
-        print("size specification is manditiory")
+        print("size specification is mandatory")
         sys.exit(1)
     if not argsDict.has_key('date'):
-        print("date specification is manditiory")
+        print("date specification is mandatory")
         sys.exit(1)
     if not argsDict.has_key('title'):
-        print("title specification is manditiory")
+        print("title specification is mandatory")
         sys.exit(1)
     if not argsDict.has_key('mapURL'):
-        print("mapURL specification is manditiory")
+        print("mapURL specification is mandatory")
         sys.exit(1)
     if not argsDict.has_key('author'):
-        print("author specification is manditiory")
+        print("author specification is mandatory")
         sys.exit(1)
 
     kml = getKML(argsDict['mapURL'])
@@ -124,6 +132,15 @@ def getKML(url):
     kmlfile = urllib.urlopen(url)
     kml = kmlfile.read()
     return kml
+
+def getCachedEleData(filename):
+    from numpy import genfromtxt
+    return genfromtxt(filename)
+
+def cacheEleData(filename, eleData):
+    with open(filename, 'w') as f:
+        for pt in eleData:
+            f.write(str(pt) + '\n')
 
 if __name__ == '__main__':
     main()
