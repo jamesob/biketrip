@@ -38,12 +38,10 @@ def main():
         print("Could not open file: %s" % filename)
         sys.exit(1)
     
-    parselines = [line for line in lines if line[:3] == '%%%']
-    assert len(parselines) == 1
-    line = parselines[0]
+    content, metaData = "".join(lines).split('%%%')
 
     vPrint("Parsing line.")
-    argsDict = parseLine(line)
+    argsDict = parseLine(metaData, debug=args.verbose)
 
     eleDataFilename = "eleData/" + argsDict['date'] + ".txt"
     elePngFilename = "images/eleprof/"+ argsDict['date'] + ".png"
@@ -58,31 +56,33 @@ def main():
     if args.regraph:
         elevations = getCachedEleData(eleDataFilename)
     else:
-        elevations = getElevations(paths, samples=250)
+        elevations = getElevations(paths, samples=250, 
+                                   debug=args.verbose)
         vPrint("Caching elevation results.")
         cacheEleData(eleDataFilename, elevations)
 
     vPrint("Saving elevation profile.")
     saveElevation(elePngFilename, elevations, size)
     
-    # Get the text other than the preprocessed line
-    lines.remove(line)
-    content = string.join(lines, '')
-
     vPrint("Generating header for jekyll.")
     header = makeHeader(**argsDict)
     
     outString = header + content
+
+    vPrint("Writing output file.")
+    outputPost(argsDict, outString)
         
+def outputPost(argsDict, outString):
+    """Given an `output` string, write out the final post."""
+
     outFileName = "_posts/%s-%s.md" % \
                    (argsDict['date'],argsDict['title'])
     outFileName = outFileName.replace(' ','')
 
-    vPrint("Writing output file.")
     outfile = open(outFileName, 'w')
     outfile.write(outString)
     outfile.close()
-
+                                  
 def makeHeader(**kwargs):
     """Make the header which jekyll will read to generate the page."""
     return '---\n' +\
@@ -94,13 +94,13 @@ def makeHeader(**kwargs):
            'eleURL: "%s"\n' % kwargs['eleURL'] +\
            '---\n\n'
 
-def parseLine(line):
+def parseLine(line, debug=False):
     """Parse the line by removing the first three characters, evaling the line,
     which hopefully will eval to a dictionary, getting the kml from the from
     the url, parsing that into paths and loading that into the returned
     dictionary."""
 
-    line = line[3:]
+    line = line.replace('\n', ' ')
     argsDict = eval(line)
 
     # There are a few things which need to be specified.
@@ -121,7 +121,7 @@ def parseLine(line):
         sys.exit(1)
 
     kml = getKML(argsDict['mapURL'])
-    paths = parseKML(kml)
+    paths = parseKML(kml, debug=debug)
     argsDict.update({'paths': paths})
     return argsDict
 
