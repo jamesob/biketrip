@@ -119,21 +119,19 @@ h1, h2, h3, h4 {
   margin-left: auto;
   margin-right: auto;
 
-  height: 210px;
+  height: 380px;
 }
-
+    
 #logMap {
   float: left;
-  width: 200px;
-  height: 200px;
-  margin-right: 10px;
+  width: 402px;
+  height: 250px;
 }
 
-#logEle img {
-  margin-left: 10px;
+img.elevation {
   float: left;
-  width: 200px;
-  height: 200px;
+  width: 460px;
+  height: 120px;
 }
 
 #logText {
