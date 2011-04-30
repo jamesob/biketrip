@@ -142,7 +142,8 @@ def getElevation(path,
 
 def saveElevation(filename,
                   elevations,
-                  size):
+                  size,
+                  fontsize=10):
     """Uses matplotlib to generate an elevation profile of the given 
     elevations array with image size size which is saved in the file 
     filename.
@@ -156,6 +157,13 @@ def saveElevation(filename,
     pyplt.ylabel('Elevation in Feet')
     size = (size[0]/100., size[1]/100.)
     fig = pyplt.gcf()
+
+    # adjust font size on axis labels
+    ax = pyplt.gca()
+    for tick, tock in zip(ax.xaxis.get_major_ticks(),
+                          ax.yaxis.get_major_ticks()):
+        [t.label1.set_fontsize(fontsize) for t in (tick, tock)]
+
     fig.set_size_inches(size[0],size[1])
     pyplt.savefig(filename, dpi=100)
 
