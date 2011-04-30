@@ -2,6 +2,20 @@
 layout: withSidebar
 title: Ad Hoc Adventure Time
 ---
+ 
+<h2>Breaking news</h2>
+
+<ul class="daily-posts">
+  {% for post in site.categories.daily limit:3 %}
+  <li>
+    <h3>{{ post.title }}</h3>
+    <div class="dayDescription">
+      <p>{{ post.content | strip_newlines | truncate: 200 }}
+      <b><a href="{{ post.url }}">read more</a></b>.
+    </div>
+  </li>
+  {% endfor %}
+</ul>  
 
 <h2>You're doing what?</h2>
 
@@ -16,17 +30,3 @@ and we got to training. And now here we are, ready to leave on May 18. Within
 these pages is our story, some information on how we got bootstrapped (as
 cheaply as possible!), and a daily log of our trip.
 
-<h2>Three Most Recent Logs</h2>
-
-
-<ul class="daily-posts">
-  {% for post in site.categories.daily limit:3 %}
-  <li>
-    <h3>{{ post.title }}</h3>
-    <div class="dayDescription">
-      <p>{{ post.content | strip_newlines | truncate: 200 }}
-      <b><a href="{{ post.url }}">read more</a></b>.
-    </div>
-  </li>
-  {% endfor %}
-</ul>
