@@ -29,7 +29,7 @@
 # creating and accessing simple elements and attributes such as
 # Feature's <name> and <visibility> and Object's id= as in <Placemark>.
 
-# Modified: 2011 by Mike Atkins
+# Modified: 2011 by Mike Atkins, James O'Beirne
 # Note: depends on libkml, matplotlib and simplejson
 
 import kmldom
@@ -160,7 +160,7 @@ def getElevation(path,
 def saveElevation(filename,
                   elevations,
                   size,
-                  fontsize=10):
+                  fontsize=6.):
     """Uses matplotlib to generate an elevation profile of the given 
     elevations array with image size size which is saved in the file 
     filename.
@@ -171,15 +171,14 @@ def saveElevation(filename,
     elevations = [elevation * 3.2808399 for elevation in elevations]
     pyplt.plot(elevations)
     pyplt.xticks([])
-    pyplt.ylabel('Elevation in Feet')
+    pyplt.ylabel('Elevation in Feet', fontsize=fontsize)
     size = (size[0]/100., size[1]/100.)
     fig = pyplt.gcf()
 
     # adjust font size on axis labels
     ax = pyplt.gca()
-    for tick, tock in zip(ax.xaxis.get_major_ticks(),
-                          ax.yaxis.get_major_ticks()):
-        [t.label1.set_fontsize(fontsize) for t in (tick, tock)]
+    for tick in ax.yaxis.get_major_ticks():
+        tick.label1.set_fontsize(fontsize) 
 
     fig.set_size_inches(size[0],size[1])
     pyplt.savefig(filename, dpi=100)

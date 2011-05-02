@@ -1,4 +1,6 @@
 #!/usr/bin/env python2
+#
+# by matkins and jamesob
 
 import sys
 import argparse
@@ -103,22 +105,12 @@ def parseLine(line, debug=False):
     line = line.replace('\n', ' ')
     argsDict = eval(line)
 
-    # There are a few things which need to be specified.
-    if not argsDict.has_key('size'):
-        print("size specification is mandatory")
-        sys.exit(1)
-    if not argsDict.has_key('date'):
-        print("date specification is mandatory")
-        sys.exit(1)
-    if not argsDict.has_key('title'):
-        print("title specification is mandatory")
-        sys.exit(1)
-    if not argsDict.has_key('mapURL'):
-        print("mapURL specification is mandatory")
-        sys.exit(1)
-    if not argsDict.has_key('author'):
-        print("author specification is mandatory")
-        sys.exit(1)
+    reqs = ['size', 'date', 'title', 'mapURL', 'author']
+
+    for r in reqs:
+        if not argsDict.has_key(r):
+            print("%s specification is mandatory" % r)
+            sys.exit(1)
 
     kml = getKML(argsDict['mapURL'])
     paths = parseKML(kml, debug=debug)
