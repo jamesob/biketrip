@@ -78,6 +78,14 @@ h1, h2, h3, h4 {
   margin-bottom: 5px;
 }
 
+/* index */
+
+div#news {
+	margin-bottom: 30px
+}
+
+/* bios */
+
 #bios {
   width: 580px;
   margin-left: auto;
@@ -96,11 +104,13 @@ h1, h2, h3, h4 {
   text-align: right;
 }
 
+/* route */
+ 
 #regularMap {
   width: 400px;
   height: 400px;
 }
-
+          
 #usaImages {
 	width: 650px;
 	height: 600px;

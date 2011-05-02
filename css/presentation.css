@@ -11,12 +11,10 @@
   src: url("/fonts/ballpark.ttf");
 }
 
-/*
 @font-face {
   font-family: "QuicksandBold";
   src: url("/fonts/Quicksand_Bold.otf");
 }               
-*/
                             
 @font-face {
   font-family: "Quicksand";
@@ -58,6 +56,16 @@ h1 {
 
 ul {
   list-style-type: circle;
+}
+
+#news ul h3, #news ol h3 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#news h3 a {
+	font-family: "QuicksandBold";
+  color: #F86955;
 }
 
 ol, ul {
