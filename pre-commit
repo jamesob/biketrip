@@ -9,4 +9,5 @@ do
     preProcessor $post -v
     git add _posts/*
     git add images/eleprof/*
+    git add eleData/*
 done
