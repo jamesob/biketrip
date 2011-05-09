@@ -76,9 +76,13 @@ def main():
         
 def outputPost(argsDict, outString):
     """Given an `output` string, write out the final post."""
+    import re
+
+    outTitle = re.sub(r'[^\w\s]+', '', argsDict['title'])
+    outTitle = re.sub(r'\s+', '-', outTitle)
 
     outFileName = "_posts/%s-%s.md" % \
-                   (argsDict['date'],argsDict['title'])
+                   (argsDict['date'], outTitle)
     outFileName = outFileName.replace(' ','')
 
     outfile = open(outFileName, 'w')
@@ -89,9 +93,9 @@ def makeHeader(**kwargs):
     """Make the header which jekyll will read to generate the page."""
     return '---\n' +\
            'layout: log\n' +\
-           'title: %s\n' % kwargs['title'] +\
+           'title: "%s"\n' % kwargs['title'] +\
            'author: %s\n' % kwargs['author'] +\
-           'category: daily\n' +\
+           'category: %s\n' % kwargs['category'] +\
            'mapURL: "%s"\n' % kwargs['mapURL'] +\
            'eleURL: "%s"\n' % kwargs['eleURL'] +\
            '---\n\n'
@@ -106,6 +110,10 @@ def parseLine(line, debug=False):
     argsDict = eval(line)
 
     reqs = ['size', 'date', 'title', 'mapURL', 'author']
+
+    # default to a daily entry
+    if 'category' not in argsDict.keys():
+        argsDict['category'] = 'daily'
 
     for r in reqs:
         if not argsDict.has_key(r):
