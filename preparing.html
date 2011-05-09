@@ -3,14 +3,16 @@ layout: withSidebar
 title: Training
 ---
  
-<ul class="training-posts">
-  {% for post in site.categories.training %}
-  <li>
-    <h3>{{ post.title }}</h3>
-    <div class="trainingDescription">
-      <p>{{ post.content | prettyprint | truncate: 200 }}... 
-      <b><a href="{{ post.url }}">read more</a></b>.
-    </div>
-  </li>
-  {% endfor %}
-</ul> 
+<div id="news">
+  <ul class="training-posts">
+    {% for post in site.categories.training %}
+    <li>
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <div class="trainingDescription">
+        <p>{{ post.content | prettyprint | truncate: 200 }}... 
+        <b><a href="{{ post.url }}">read more</a></b>.
+      </div>
+    </li>
+    {% endfor %}
+  </ul> 
+</div>
