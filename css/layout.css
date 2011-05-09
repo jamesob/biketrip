@@ -170,7 +170,7 @@ img.elevation {
 
 #footer #contacts {
   text-align: left;
-  width: 640px;
+  width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -185,12 +185,23 @@ img.elevation {
 }
 
 #james-contact {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 #github {
   width: 200px;
   float: left;
+}
+
+#rssLogo {
+  padding-top: 15px;
+  margin-left: 30px;
+  width: 50px;
+  float: left;
+}
+
+#rssLogo img {
+  width: 50px;
 }
 
 
