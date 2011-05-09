@@ -1,8 +1,8 @@
 ---
 layout: log
-title: Day -26
+title: "Day -26: Ride with Will B."
 author: Mike
-category: daily
+category: training
 mapURL: "http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=203384579587508079739.0004a19a3b826d4790c92&z=12&output=kml"
 eleURL: "/images/eleprof/2011-4-23.png"
 ---

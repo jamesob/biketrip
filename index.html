@@ -7,7 +7,7 @@ title: Ad Hoc Adventure Time
     <h2>Breaking news</h2>
 
     <ul class="daily-posts">
-      {% for post in site.categories.daily limit:3 %}
+      {% for post in site.posts limit:3 %}
       <li>
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <div class="dayDescription">
