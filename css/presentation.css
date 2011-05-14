@@ -189,7 +189,7 @@ img.bio {
   color: #555;
 }
 
-#inner-nav ul {
+#inner-nav ul, #inner-nav ol {
   padding-left: 10px;
   margin-left: 0;
 }
@@ -212,6 +212,24 @@ img.bio {
 
 #jtweets, #mtweets {
   margin-bottom: 20px;
+}
+
+#flickrPhotos ol {
+	list-style-type: none;
+	margin-left: 5px;
+	margin-bottom: 30px;
+}
+
+#flickrPhotos ol div {
+	height: 85px;
+}
+
+#flickrPhotos li {
+	margin-bottom: 20px;
+}
+
+#flickrPhotos img {
+	border: 1px solid #444;
 }
 
 #jtweets ul, #mtweets ul, #innerPageNav ul {

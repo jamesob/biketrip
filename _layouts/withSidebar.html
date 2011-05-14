@@ -6,7 +6,26 @@ headScripts: ["/js/twitter.js",
               "http://maps.google.com/maps/api/js?sensor=false"
              ]
 ---
-  
+ 
+<script type="text/javascript">
+function jsonFlickrFeed(data) {
+
+  function makeImg(item) {
+    var sourceSqaure = (item.media.m).replace("_m.jpg", "_s.jpg");
+    return '<a href = "' + item.link + '" target="_blank"><img title="' + 
+        item.title + '" src="' + sourceSqaure + '" /></a>'; 
+  }
+
+  for(var i=0; i < 4; i += 2) {
+    var item1 = data.items[i];
+    var item2 = data.items[i+1];
+    $("#flickrPhotos ol").append("<div><div style='float:left;'>" +
+        makeImg(item1) + "</div><div style='float:left; margin-left:10px;'>" + 
+        makeImg(item2) + "</div>");
+  }
+}  
+</script>
+         
 <script type="text/javascript">
   $(document).ready(function() {
     /* 
@@ -27,7 +46,19 @@ headScripts: ["/js/twitter.js",
       $(this).wrapInner('<a class="black" name="'+link+'" />');
       $("#innerPageNav ul").append("<li><a href=#"+link+'>'+ $(this).text() + "</a></li>");
     });
+
+    $.getScript("http://api.flickr.com/services/feeds/photos_public.gne?id=62630874@N02&lang=en-us&format=json");
+
   });
+
+</script>
+
+<script type="text/javascript">
+
+</script>
+
+<script type="text/javascript" 
+	src=>
 </script>
        
 <div id="content">
@@ -39,6 +70,11 @@ headScripts: ["/js/twitter.js",
 <div id="inner-nav">
   <ul>
   </ul>
+
+  <div id="flickrPhotos">
+    <h4><a href="http://www.flickr.com/photos/62630874@N02/">Latest photos</a></h4>
+	  <ol></ol>
+  </div>
   <div id="twitShite">
     <h4><a href="http://twitter.com/jamesob">@jamesob</a></h4>
     <div id="jtweets"></div>
