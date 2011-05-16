@@ -100,7 +100,7 @@ p {
   line-height: 1.5em;
 }
 
-ul.oneLineList li {
+ul.oneLineList li, ol.oneLineList li {
   padding-bottom: 10px;
 }
 
