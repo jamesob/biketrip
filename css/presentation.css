@@ -35,6 +35,9 @@ h1, h2, h3, h4 {
   font-family: "Quicksand";
 }
 
+h3 {
+  margin-top: 2em;
+}
 
 h1 {
   margin-bottom: 40px;
@@ -89,6 +92,10 @@ p {
   line-height: 1.5em;
 }
 
+ul.oneLineList li {
+  padding-bottom: 10px;
+}
+
 .blockCenter {
   display: block;
   margin-left: auto;
@@ -131,12 +138,12 @@ img.bio {
 
 #pageContent a {
   font-weight: bold;
-  color: #A6CFE3;
+  color: #FFA882;
   text-decoration: none;
 }
     
 #pageContent a:hover {
-  color: #FFA882;
+  color: #A6CFE3;
 }
 
 
@@ -250,6 +257,24 @@ img.bio {
 }
 
 /* misc divs */
+
+#mapCaption {
+  margin-bottom: 2em;
+}
+
+
+/* cost tables */
+
+#mikeCosts td, #jamesCosts td {
+  padding: 10px;
+}
+
+#mikeCosts th, #jamesCosts th {
+  border: 1px solid #AAA;
+  background-color: #F2F2EE;
+  padding: 10px;
+  text-align: left;
+}
 
 /* footer stuff */
 
