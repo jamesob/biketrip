@@ -35,5 +35,5 @@ split off whilst TStephens and I soldiered on to Velocity Bike CoOp. I repacked
 my headset with some new bearings to correct the creak I had been hearing, so
 TStephens and I departed on our now silent bikes.
 
-Unfortunately, the sky wasn't so silent. 
+Unfortunately, the sky wasn't so silent, and we got very wet. 
 
