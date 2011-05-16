@@ -9,9 +9,9 @@ title: Ad Hoc Adventure Time
     <ul class="daily-posts">
       {% for post in site.posts limit:3 %}
       <li>
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <h3 class="postTitle"><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <div class="dayDescription">
-          {{ post.content | strip_newlines | truncate: 200 }}
+          <p>{{ post.content | strip_newlines | strip_html | truncate: 200 }}
           <b><a href="{{ post.url }}">read more</a></b>.
         </div>
       </li>

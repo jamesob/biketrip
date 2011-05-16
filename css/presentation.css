@@ -39,6 +39,15 @@ h3 {
   margin-top: 2em;
 }
 
+.postTitle {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+div.trainingDescription p {
+  margin-bottom: 0 !important;
+}
+
 h1 {
   margin-bottom: 40px;
 }
@@ -61,11 +70,6 @@ ul {
   list-style-type: circle;
 }
 
-#news ul h3, #news ol h3 {
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
 #news h3 a {
 	font-family: "QuicksandBold";
   color: #F86955;
@@ -73,6 +77,10 @@ ul {
 
 ol, ul {
   margin-bottom: 1em;
+}
+
+#content p {
+  margin-bottom: 2em;
 }
 
 ul p {
@@ -274,6 +282,11 @@ img.bio {
   background-color: #F2F2EE;
   padding: 10px;
   text-align: left;
+}
+
+td.totalRow {
+  font-weight: bold;
+  border: 1px solid #AAA;
 }
 
 /* footer stuff */
