@@ -114,6 +114,8 @@ div#news {
 #usaImages {
 	width: 650px;
 	height: 600px;
+  padding-left: 30px;
+  margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
 }
