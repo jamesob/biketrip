@@ -1,3 +1,12 @@
+---
+layout: log
+title: "Day 1: Culpeper Chili Coma"
+author: James
+category: daily
+mapURL: "http://maps.google.com/maps/ms?msa=0&msid=203384579587508079739.0004a394424d7d8b37fdb&output=kml"
+eleURL: "/images/eleprof/2011-5-18.png"
+---
+
 Tuesday was a frantic scramble to get our stuff in order for this morning's big
 leave. After scooping Mike from his Mclean cheteau, the two of us skittered
 around Reston tying up loose ends; this included: getting Tang[^1] and other
@@ -216,10 +225,3 @@ philosophy for a hot shower.
 [^4]: probably in a drunken rage.
 [^5]: aka Kevin Christensen
 
-%%%
-{'mapURL':'http://maps.google.com/maps/ms?msa=0&msid=203384579587508079739.0004a394424d7d8b37fdb&output=kml',
- 'date': '2011-5-18',
- 'title': 'Day 1: Culpeper Chili Coma',
- 'category': 'daily',
- 'size': (460,120),
- 'author': 'James'}                                 
