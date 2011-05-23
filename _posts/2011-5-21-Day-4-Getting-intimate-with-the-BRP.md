@@ -243,3 +243,5 @@ The Blue Ridge Parkway exemplifies a characteristic I've seen in other awesome
 presences of nature: it's extremely beautiful and completely unrelenting. By
 morning, we were still exhausted.
 
+We pulled 58 miles on Day 4, and I can still feel it.
+
