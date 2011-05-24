@@ -303,6 +303,10 @@ td.totalRow {
 
 /* footer stuff */
 
+div.footnotes {
+  margin-top: 100px;
+}
+
 #footer {
   font-size: 0.8em;
   padding-bottom: 100px;
