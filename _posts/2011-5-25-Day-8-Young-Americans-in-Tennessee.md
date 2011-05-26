@@ -1,3 +1,12 @@
+---
+layout: log
+title: "Day 8: Young Americans in Tennessee"
+author: James
+category: daily
+mapURL: "http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=205146746303315582883.0004a40b79a39bb9d9896&ll=36.589758,-82.176275&spn=0.027015,0.055189&z=14&output=kml"
+eleURL: "/images/eleprof/2011-5-25.png"
+---
+
 
 Mike and I went to bed around 11PM last night in Bob Atkins' Wytheville home
 after talking with Bob about inductive chargers for electric cars, venture
@@ -240,10 +249,3 @@ social ostrasization.
 [^4]: or really anywhere, but of course everything is more dangerous in the
 south
 
-%%%
-{'mapURL':'http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=205146746303315582883.0004a40b79a39bb9d9896&ll=36.589758,-82.176275&spn=0.027015,0.055189&z=14&output=kml',
- 'date': '2011-5-25',
- 'title': "Day 8: Young Americans in Tennessee",
- 'category': 'daily',
- 'size': (460,120),
- 'author': 'James'}                                 
