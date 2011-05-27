@@ -1,2 +1,3 @@
 auto: true
 exclude: [posts]
+paginate: 10

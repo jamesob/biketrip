@@ -3,15 +3,12 @@ layout: withSidebar
 title: AHAT daily log
 ---
 
-<h2>Trip starts May 18</h2>
+<h2>Days chronologically</h2>
 <ul class="daily-posts">
-  {% for post in site.categories.daily %}
+  {% for post in site.categories.daily reversed %}
   <li>
-    <h3>{{ post.title }}</h3>
-    <div class="dayDescription">
-      <p>{{ post.content | strip_newlines | truncate: 200 }}
-      <b><a href="{{ post.url }}">read more</a></b>.
-    </div>
+	  <span class="postDate">{{ post.date | date: '%B %d, %Y' }}</span>
+	  <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
   {% endfor %}
 </ul>

@@ -112,6 +112,41 @@ ul.oneLineList li, ol.oneLineList li {
 
 /* logs */
 
+ul.daily-posts {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#neighborPosts {
+  height: 100px;
+  margin-bottom: 3em;
+}
+
+#prevPost, #nextPost {
+  font-family: "Ballpark";
+  width: 250px;
+  font-size: 2em;
+  /* font-variant: small-caps;*/
+}
+
+#prevPost {
+  float: left;
+}
+              
+#nextPost {
+  text-align: right;
+  float: right;
+}             
+
+span.postDate {
+  color: #AAA;
+  font: monospace;
+  margin-right: 10px;
+}
+
 /*
 img.elevation {
   padding: 5px;

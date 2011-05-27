@@ -22,6 +22,21 @@ layout: withSidebar
 {{ content }}
 </div>
 
+<div id="neighborPosts">
+  <div id="prevPost">
+    {% if page.previous.url %} 
+    <a href="{{page.previous.url}}" title="Previous Post: 
+{{page.previous.title}}">&laquo; prev. day</a> 
+    {% endif %} 
+  </div>
+  <div id="nextPost">
+    {% if page.next.url %} 
+    <a href="{{page.next.url}}" title="Next Post: 
+      {{page.next.title}}">next day &raquo;</a> 
+    {% endif %} 
+  </div>
+</div>
+   
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
