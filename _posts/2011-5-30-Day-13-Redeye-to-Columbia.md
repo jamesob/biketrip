@@ -197,9 +197,10 @@ little daunting and maybe impossible.
 
 We called the girl to see what the deal was, but she didn't pick up. We decided
 to call a spade a flaky CouchSurfer and find a motel. We googled for the
-cheapest option in town and the James K. Polk motel readily appeared. The motel
-flaunted an average one star out of a possible five. One review was titled [*I
-WAS PROPOSITIONED BY A PROSTITUTE IN FRONT OF MY
+cheapest option in town and the James K. Polk motel readily appeared. 
+
+The motel flaunted an average one star out of a possible five. One review was
+titled [*I WAS PROPOSITIONED BY A PROSTITUTE IN FRONT OF MY
 KID*](http://maps.google.com/maps/place?hl=en&um=1&ie=UTF-8&q=james+k+polk+motel,+columbia+tn&fb=1&gl=us&hq=james+k+polk+motel,&hnear=0x88637171dce92331:0xdd976dec8f325f78,Columbia,+TN&cid=99902508277944724530);
 another detailed a midnight robbery that had taken place in the client's room.
 Of course, we were sold.
