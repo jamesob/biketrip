@@ -1,3 +1,12 @@
+---
+layout: log
+title: "Day 17: Old man Morris and the girl at Cordova"
+author: James
+category: daily
+mapURL: "http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&ll=35.262721,-89.356956&spn=0.054944,0.110378&z=13&msid=205146746303315582883.0004a4fb54f4f31db7bb7&output=kml"
+eleURL: "/images/eleprof/2011-6-3.png"
+---
+
     
 We enjoyed a comfortable sleep on the night of our rest day, but I ended up
 waking up a few times in the dark; my body must've been fully charged and ready
@@ -249,10 +258,3 @@ to Brittany.
 [^8]: which was exactly the description given to us by Chris
 
 
-%%%
-{'mapURL':'http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&ll=35.262721,-89.356956&spn=0.054944,0.110378&z=13&msid=205146746303315582883.0004a4fb54f4f31db7bb7&output=kml',
- 'date': '2011-6-3',
- 'title': "Day 17: Old man Morris and the girl at Cordova",
- 'category': 'daily',
- 'size': (460,120),
- 'author': 'James'}                                  
