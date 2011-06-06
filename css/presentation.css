@@ -170,7 +170,9 @@ img.elevation {
   margin-top: 20px;
 }
 
-.imageWithCaption {
+div.imageWithCaption {
+  margin-top: 5em;
+  margin-bottom: 5em;
   font-size: 0.8em;
   text-align: center;
   margin-bottom: 40px;
