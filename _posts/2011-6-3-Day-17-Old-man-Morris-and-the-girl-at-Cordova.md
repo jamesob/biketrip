@@ -161,16 +161,15 @@ wolfed the sandwiches in an empty parking lot.
 We hit the road for Cordova, a dense suburb on the outskirts of Memphis, which
 is where our host, Brittany, had an apartment. We'd received instructions from
 Brittany to waltz right into her empty abode, using methods which will remain
-undisclosed. I found this suspicious considering
+undisclosed. I found this odd, considering that
 
 <ol>
-	<li>we only know Brittany from the internet, and had only been conversing
+	<li>we only knew Brittany from the internet, and had only been conversing
 	over the span of a few days,</li>
 	<li>Brittany is a 19-year-old girl,</li>
-	<li>Brittany's connection to the Good Ol' Boys stood undefined.</li>
 </ol>
 
-No less, in we went. 
+Brave girl. Despite disbelief, in we went. 
 
 We found a basic, clean apartment, too small for two but efficiently comfortable
 for one. A Marilyn Monroe poster hung above a fireplace, messages written in
