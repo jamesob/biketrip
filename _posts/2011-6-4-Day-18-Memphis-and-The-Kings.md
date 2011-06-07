@@ -369,7 +369,7 @@ we saw.
 [^2]: "rabbit" is the hostname of my netbook
 [^3]: I preach even on vacations.
 [^4]: Elvis, you may or may not have simply ripped off music from blacks and
-popularized it, but, either way, you're the guy that sang the music and for that my
+popularized it, but, either way, you're the guy that sang it and for that my
 hat's off to you. Sorry we couldn't make your house.
 [^5]: not a pun. *not* a pun.
 [^6]: mostly just consisted of us going the wrong way on big roads, cycling
