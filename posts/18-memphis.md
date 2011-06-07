@@ -7,22 +7,22 @@ my consciousness, she didn't let on.
 
 I spent a few minute rolling around and taking occasional glances at her as she
 moved deftly through the small kitchenette. There's something very soothing
-about watching a pretty woman make coffee in the quiet AM.
+about being half-awake and watching a pretty woman make coffee in the quiet AM.
 
-After a few minutes of playing possum on the couch, I rattled my sooty vocal
+After a few minutes of playing dead on the couch, I rattled my sooty vocal
 chords enough to signal that yes, please, I'd like a cup of coffee. Brittany
 drinks her coffee black, so I poured myself a cup as dark and we began the
 sacrament of early morning coffee-drinking in its purest denomination.
 
 Meanwhile, Mike stirred on the couch parallel to the kitchenette. The three of
-us wandered a sparse field of conversation as Brittany made herself a sandwich
+us wandered a sparse conversation as Brittany made herself a sandwich
 for work. She told us that she may not be back tonight since she'd be
 baby-sitting immediately after work, but it was fine if we stayed at the
 apartment without her.
 
-She left, forgetting her sandwich. Mike and I took it slow, since it was a rest
-day, but we eventually collected ourselves, ate a few toaster pastries, and got
-moving for Memphis.
+We said our thank-yous and goodbyes and she left, forgetting her sandwich. Mike
+and I took it slow, since it was a rest day, but we eventually collected
+ourselves, ate a few toaster pastries, and got moving for Memphis.
 
 Brittany had told us about a bike path which leads from Cordova directly into
 midtown, so we scouted that out on our phones.
@@ -147,17 +147,91 @@ brews apiece. A neon sign towered over the dark, high-ceilinged ballroom,
 demanding *EAT*.
 
 The beer filled us with a pleasant buzz that made the outside world into a room
-within an unreal funhouse, the hazy heat and bright glare disorienting and
-slightly comical. We decided to find a coffee shop so that we could have a good
-sit and Mike could make use of rabbit[^2] to do some detailed planning.
+in an unreal funhouse, the hazy heat and bright glare disorienting and slightly
+comical. We decided to find a coffee shop so that Mike could make use of
+rabbit[^2] to do some detailed planning.
                                           
 <div class="imageWithCaption">
 	<div class="imageCaption">
 	</div>
 </div>
-                                          
+
+Google referred us to a place a few blocks up, Outlands. We pedaled there and
+were pleased with what we found; a very roomy shop playing good music, spread
+over multiple rooms. We found a central table within the biggest of the rooms
+and got to work. Once Mike was set up with rabbit, I could either twiddle with
+my cellphone or read the first few pages of *On the Road*. I said, "Jeez, I'm
+reading *On the Road* in a real coffeeshop. This is heavy." and a guy at an
+adjacent table snickered and shook his head. Ray Parker Jr.'s Ghostbusters theme
+came on.
+
+Oddly enough, I think this was the first time I've hung out at a *real*
+coffeeshop; back in northern Virginia, there's really no reason to go anywhere
+but Starbucks, so I never did. The difference is about what you'd expect: the
+atmosphere is marginally more interesting and the pastries are twice as expensive.
+
+I made sure to tag the bathroom chalkboard with a supply/demand curve to
+compensate for all the mostly-thoughtless, artsy bullshit that was up there
+already[^3]. Mike was done, so we bought a few baked goods, snacked, then left
+for Beale St.
+
+On the way to Beale St., I had a realization: never has there been a stage in my
+life during which I had such undirected, uninfluenced control over the way that
+I spend my own time. 
+
+From age 6, it's been glass-clear what my daily, weekly, and monthly schedule
+should resemble. Go to kindergarten, come home, watch TV, go to sleep.
+Go to grade school instead. Go to high school, come home, waste time,
+half-ass homework, sleep. Go to four-year college, study hard, get degree.
+
+Fifty years ago, this automation existed only up until age 16; sure, high school
+was expected, but not everyone wanted to (or needed to) go to a college. Now,
+college is a given. In five years, you'll be scoffed at if you haven't attended
+grad school.
+
+For the first time in my life, riding through the mostly-dilapidated Memphis
+streets, it wasn't clear what I was supposed to be doing or where I was supposed
+to be a month from now. Hell, if I wanted to stay in Memphis a week longer, I
+could do it (though Mike would be none too happy).
+
+It made me wonder if this growing automation of life-choices and paths in
+younger generations isn't stifling creativity. Isn't the key to leading an
+awesome life figuring out how to best spend your time? How can we expect to be
+good at macroscopic time management if we don't start practicing until we're 25?
+Isn't a baseline 16 years of insular schooling a little excessive? 
+
+There's a whole goddamn beautiful world out there and we're spending our youth
+taking Cultural Studies classes from a 34-year-old Yale graduate and paying
+exorbitant prices for vapid textbooks with our parents' money. 
+
+Anyway, realizing that my time is my own to spend hit me like a crowbar and what
+a rush it was.
+
+We got to Beale St., locked the bikes, and toddled around. 
+
+Beale Street is a huge tourist trap. To be fair, we didn't see it at night when the
+bars are all pulsing and the air is full of slide-guitar, but we couldn't find
+any bluesy dives. I'm sure there's great music at BB King's, but it wasn't the
+Mississippi-delta raunch we were looking for.
+
+We headed north of Beale to the Flying Saucer, a large beer bar reputed to have
+a huge selection. They did, and we enjoyed sitting at an old, wooden table and
+studying the four-page menu of beers like accountants in early April. Mike and I
+placed an order with the saccharine-but-serious barmaid, the one that works every
+high-volume counter in the country, and sat sipping brews and talking
+philosophy.
+
+Since we were buzzed and on our day off, this is the first time Mike and I got
+to have a non-trip-related conversation. We talked about Christianity, which led
+into a debate about whether or not there is such a thing as Truth. I was in
+Truth's corner; Mike, being a mathematician, demands perfect rigor and therefore
+disqualified any sort of absolute from being useful, eventually denouncing all
+of statistics by poo-pooing the Central Limit Theorem. Obviously, we were pretty
+sauced by then.
+
 [^1]: the parts of the wheel which the bearings rest against.
-[^2]: my netbook
+[^2]: "rabbit" is the hostname of my netbook
+[^3]: I preach even on vacations.
     
 %%%
 {'mapURL':'http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=205146746303315582883.0004a50fb965889f9a997&ll=35.058526,-89.998283&spn=0.055082,0.110378&z=13&output=kml',
