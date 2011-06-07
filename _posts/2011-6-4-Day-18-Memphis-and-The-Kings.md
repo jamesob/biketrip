@@ -1,3 +1,12 @@
+---
+layout: log
+title: "Day 18: Memphis and The Kings"
+author: James
+category: daily
+mapURL: "http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=205146746303315582883.0004a50fb965889f9a997&ll=35.058526,-89.998283&spn=0.055082,0.110378&z=13&output=kml"
+eleURL: "/images/eleprof/2011-6-4.png"
+---
+
 
 Light was streaming into Brittany's living room through a sliding glass door
 when I came to on Saturday, June 4th. I was on a leather couch caty corner to
@@ -367,10 +376,3 @@ hat's off to you. Sorry we couldn't make your house.
 through very creepy industrial areas, and
 navigating scary neighborhoods.
     
-%%%
-{'mapURL':'http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=205146746303315582883.0004a50fb965889f9a997&ll=35.058526,-89.998283&spn=0.055082,0.110378&z=13&output=kml',
- 'date': '2011-6-4',
- 'title': "Day 18: Memphis and The Kings",
- 'category': 'daily',
- 'size': (460,120),
- 'author': 'James'}                                  
