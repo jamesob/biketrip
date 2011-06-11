@@ -104,8 +104,8 @@ and saw our progress at a macroscopic level for the first time in recent memory.
 </div>
  
 We talked a little with a black truck-driver, who initially came across as very
-chatty, but ended up being a gentleman. He wearing a headset, which made him
-look like he was working an air-traffic control shift remotely, and
+chatty, but ended up being a gentleman. He was wearing a headset, which made him
+look as though he was working an air-traffic control shift remotely, and
 BearShare'ing[^4] on a laptop.
 
 I went back for another pass at a fudge sundae and a chicken sandwich[^3], then
