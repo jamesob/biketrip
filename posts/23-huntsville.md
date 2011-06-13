@@ -31,14 +31,15 @@ Food Bag 2. As I laid my bike down, panting like a heavyset Labrador, I asked
 myself how I could make this situation more ridiculous.
 
 Only one answer came shining through, and it drove me to immediate action. I
-tore open Food Bag 1, ripped one of the loose beers out of it, and twisted the
+tore open Food Bag 2, ripped one of the loose beers out of it, and twisted the
 cap off with a dramatic explosion of beer.
 
 I poured the tepid brew down my throat. Mike's deadpan response was, "that's
 stupid. I don't care if you die." I shrugged and signed off on a mental seal of
 agreement, then made one more dead soldier for the state of Arkansas. 
 
-We got back to the climb, hit the crest, and snapped some photos.
+We got back to the climb, hit the crest, and snapped some photos. We descended
+and the wind through my sweat-soaked jersey felt like a sheet of ice on my back.
                          
 <div class="imageWithCaption">
 	<div class="imageCaption">
