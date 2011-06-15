@@ -22,9 +22,10 @@ gleam, western neon, and noiry art-deco.
      
 
 We came into the city through the west along 412, a sun-soaked strip of discount
-body shops and 'spic food. The roads were reasonably well-paved, especially
-relative to the outskirts of Memphis. Zagging neon lettering already advertised
-Tulsa's fascination with the modern as envisioned in the hopeful fifties.
+body shops and Mexican restaurants. The roads were reasonably well-paved,
+especially relative to the outskirts of Memphis. Zagging neon lettering already
+advertised Tulsa's fascination with the modern as envisioned in the hopeful
+fifties.
 
 Tulsa is a hip half-indian cowgirl toting a laser-tipped popgun, eating a greasy
 burger in a streamlined, chromium diner and blasting rockabilly through cheap
