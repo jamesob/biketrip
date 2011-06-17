@@ -62,16 +62,22 @@ the gear off our bikes, then took the unburdened frames out for a ride to find
 dinner.
                                 
 <div class="imageWithCaption">
-<a href="http://www.flickr.com/photos/62630874@N02/5826050735/" title="Wen's courtyard by james.ob, on Flickr"><img src="http://farm3.static.flickr.com/2698/5826050735_ca062de477.jpg" width="500" height="375" alt="Wen's courtyard"></a>
+<a href="http://www.flickr.com/photos/62630874@N02/5826050735/"
+title="Wendelene's courtyard by james.ob, on Flickr"><img
+src="http://farm3.static.flickr.com/2698/5826050735_ca062de477.jpg" width="500"
+height="375" alt="Wendelene's courtyard"></a>
 	<div class="imageCaption">
-		Wen's courtyard.
+		Wendelene's courtyard.
 	</div>
 </div>
                                 
 <div class="imageWithCaption">
-<a href="http://www.flickr.com/photos/62630874@N02/5826080073/" title="Wen's balcony by james.ob, on Flickr"><img src="http://farm4.static.flickr.com/3632/5826080073_9a85bac0dc.jpg" width="375" height="500" alt="Wen's balcony"></a>
+<a href="http://www.flickr.com/photos/62630874@N02/5826080073/"
+title="Wendelene's balcony by james.ob, on Flickr"><img
+src="http://farm4.static.flickr.com/3632/5826080073_9a85bac0dc.jpg" width="375"
+height="500" alt="Wendelene's balcony"></a>
 	<div class="imageCaption">
-		Wen's balcony
+		Wendelene's balcony
 	</div>
 </div>
          
@@ -126,7 +132,7 @@ like a spat between temperamental newlyweds.
 	</div>
 </div>
      
-We finished up at the Daily Grill and called Wen; she had just rode down to
+We finished up at the Daily Grill and called Wendelene; she had just rode down to
 Archer and Main, where a bicycle race was being held. I almost passed it up
 because I was beat; glad I didn't.
 
@@ -145,7 +151,7 @@ from the crowd.
      
 We looked around a moment at the convoy of trucks branded by bicycle companies
 and the bars across the street. The sun was just setting. We continued the hunt
-for Wen by crossing the racecourse at the go-ahead of a cop working the
+for Wendelene by crossing the racecourse at the go-ahead of a cop working the
 crossing.
 
 All sides of the closed street were pulsing with laughter and drinking. The
@@ -160,14 +166,14 @@ overtake natural.
 	</div>
 </div>
      
-We kept north on Main still in search of Wen. Mike got antsy and hopped into a
-bar, returning with a beer, when I got a call from Wen giving us more detailed
+We kept north on Main still in search of Wendelene. Mike got antsy and hopped into a
+bar, returning with a beer, when I got a call from Wendelene giving us more detailed
 directions. 
 
-We met her and some friends in front of a bratwurst stand. It was Wen, Jenny: a
-hilariously outspoken girl; Derya, Wen's Hungarian, electrical-engineering, and
+We met her and some friends in front of a bratwurst stand. It was Wendelene, Jenny: a
+hilariously outspoken girl; Derya, Wendelene's Turkish, electrical-engineering, and
 delicate rooommate; and Daniel, a well-built, blonde Californian about 5'10"
-also couchsurfing with Wen. Daniel was in town for a century around Tulsa,
+also couchsurfing with Wendelene. Daniel was in town for a century around Tulsa,
 starting early the next morning.
 
 We chatted for a while with the group, then I accompanied Jenny to Crystal
@@ -223,7 +229,7 @@ middle of the street. The girls were oggling a group of spandex-clad racers
 while Mike and I joked around with Daniel. 
 
 Daniel had landed a job in McAllister, OK working at an ammunitions factory.
-He'd met up with Wen through a CouchSurfing potluck held in Tulsa. He reminded
+He'd met up with Wendelene through a CouchSurfing potluck held in Tulsa. He reminded
 me a lot of a good friend from home, Alex Katzenstein. A cop car, lights active,
 crawled by.
 
@@ -257,7 +263,7 @@ Despite our best attempts to kill the pitchers, we ended up pouring the remnants
 into our waterbottles[^2] and leaving Joe's.
     
 Jenny again escaped on bike, choosing an impressively dangerous route back to
-Wen's apartment. This time, Mike chased after her.
+Wendelene's apartment. This time, Mike chased after her.
 
 Daniel and I biked together, the other two girls following close behind, and we
 talked while passing the High Life waterbottle back and forth. I liked biking
@@ -270,7 +276,7 @@ greatest resource. Tap the locals and you are far more likely to have a good
 time in a foreign place.
 
 Someone driving my body carried my bike up the wooden, outdoor staircase and
-rested it outside of Wen's door. The same ghost had me take out my contacts
+rested it outside of Wendelene's door. The same ghost had me take out my contacts
 and unroll my sleeping bag. Daniel, Mike, and I crashed in the living
 room at approximately 2AM. 
 
@@ -280,6 +286,6 @@ ninety miles.
 [^1]: as you can probably guess by now, any attempts at avoiding Joe Momma's
 would be futile
 [^2]: like any self-respecting, lush bicyclists
-[^4]: to give you a idea of how incredibly cheap Tulsa is to live in, Wen's
-awesome, centrally-located apartment can be *bought* for $59k. $59k!
+[^4]: to give you a idea of how incredibly cheap Tulsa is to live in, Wendelene's
+awesome, centrally-located apartment can be *bought* for $100k. $100k!
      
