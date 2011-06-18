@@ -29,7 +29,7 @@ Mike finished packing before me and seemed eager to start, so he charged off to
 a donut shop while I finished packing. We agreed to rendezvous at a McDonald's
 and, minutes later, we sat down in a booth and set up our exhibit for the
 onlooking locals. Some elderly trucker-type[^1] made a comment, loudly, that I
-was shaving in the bathroom. He then commented, "NOW THE FELLER'S PUTTIN'
+was shaving in the bathroom. He then observed, "NOW THE FELLER'S PUTTIN'
 SUNSCREEN ON HIS FACE." Good work, Encyclopedia Brown. I waved at him for fun.
 
 We finished up with the facilities, wolfed down our breakfast in olympic
