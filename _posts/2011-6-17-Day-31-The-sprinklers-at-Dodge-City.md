@@ -37,13 +37,7 @@ easily and without event; I think there was one flat.
 On the edge of town, we rode a few miles through gray industrial grit. We rode
 past uninviting wire fences and grain silos that looked like soundless,
 ivory memorials to strange years long dead.
-                                                                          
-<div class="imageWithCaption">
-<a href="http://www.flickr.com/photos/62630874@N02/5850709615/" title="Indust by james.ob, on Flickr"><img src="http://farm6.static.flickr.com/5078/5850709615_c38d170e5a.jpg" width="500" height="375" alt="Indust"></a>
-	<div class="imageCaption">
-	</div>
-</div>
-                                         
+                                        
 <div class="imageWithCaption">
 <a href="http://www.flickr.com/photos/62630874@N02/5850724805/" title="Nobody home by james.ob, on Flickr"><img src="http://farm6.static.flickr.com/5238/5850724805_32e283e2d9.jpg" width="500" height="375" alt="Nobody home"></a>
 	<div class="imageCaption">
