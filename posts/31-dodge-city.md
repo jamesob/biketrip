@@ -115,8 +115,8 @@ it was full of broken, strobing florescent bulbs. I'm pretty sure the whole
 thing was directed by David Lynch.
  
 I laughed a few times at the absurdity of the situation and got my phone out and
-tweeted like the dickens. I tried to video the storm, but all the camera picked
-up was black. It was about midnight.
+tweeted like hell. I tried to video the storm, but all the camera picked up was
+black. It was about midnight.
              
 I laid between the two picnic tables in the hovel, my bike rested against the
 picnic table to the right of my feet. Mike laid behind the picnic table to my
