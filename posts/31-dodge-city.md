@@ -1,6 +1,6 @@
 
-We sat like early-rising catatonics watching Animal Planet at 7AM in Gene's
-house, eating fruity pebbles while the kids climbed on us. We packed up
+We sat like early-rising catatonics, watching Animal Planet at 7AM in Gene's
+house and eating fruity pebbles while the kids climbed on us. We packed up
 the bikes and said our goodbyes.
 
 We biked through towns with behemoth windmills and curious roadside decorations.
