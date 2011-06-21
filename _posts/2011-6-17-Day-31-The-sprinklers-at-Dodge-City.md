@@ -110,7 +110,7 @@ up.
      
 A Hispanic family was playing quietly in the park, and they began leaving with
 casual slowness when we showed up. I thought about going up to them, telling
-them we weren't crazies, but I figured that would only make even more suspicious
+them we weren't crazies, but I figured that would only make them even more suspicious
 that we were crazies. They strolled up the hill with their kid in a wagon.
 
 Just as we had our bikes locked and packed away for the night and our sleeping
