@@ -48,7 +48,7 @@ we'd made and bursts of "oh have you heard _______?".
 	</div>
 </div>
      
-On the way to the castle, still a mystery to Mike and I, we dropped by an old
+On the way to the castle, still a mystery to Mike and me, we dropped by an old
 cabin that Patti's family owns. We snaked through rural curves, passed a small
 town, and eventually settled the Honda on the edge of a driveway hidden in the
 woods. The gate guarding the driveway had a broken lock, so we left the car
