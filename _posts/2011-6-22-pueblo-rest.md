@@ -391,7 +391,7 @@ luck, shook our hands, and Patti snapped a picture.
 
 We walked a block back to the car and started home. Patti and I alternated
 choosing music and Mike fell asleep in the back. We drove fast on the
-interstate, cutting through the thick dark south towards Pueblo. Patti passed her
+interstate, cutting through the thick dark, south towards Pueblo. Patti passed her
 phone to me so I could cue up a track and our hands brushed on one another's for
 a little longer than necessary.
 
@@ -400,7 +400,8 @@ while I hung around in the kitchen.
 
 After a little talk, Patti said she was going upstairs to work on an article for
 the local paper. On her way out of the kitchen, she signaled for an embrace. I
-took her and, on a hunch, pulled back and kissed her. 
+took her and, on a hunch, pulled back and kissed her. That could've landed me on
+the lawn for the night, but it didn't.
 
 We parted and I went downstairs to the couch, a little short of breath.
      
