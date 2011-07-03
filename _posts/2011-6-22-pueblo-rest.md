@@ -411,7 +411,7 @@ math computer lab and turned it into an office for themselves, along with
 rooting and disassembling various computers, undertaking time-lapse photography
 projects, stealing surplus whiteboards, and generally making sure that the lab
 was in good working order (god knows the sysadmin Dwayne couldn't handle that).
-The original group consisted of Tom Stephens, Jeff Snyder, Josh Snyder, Mike
+The original group consisted of Tom Stephens, Jeff Snider, Josh Snyder, Mike
 Atkins, and myself.
 
 [^3]: *for myself:* If someone has a coal plant down the road and I cough three
