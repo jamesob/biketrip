@@ -14,7 +14,7 @@ but quiet. I rolled around, trying to forget what day it was and what I knew the
 day would entail.
 
 That day, we'd be leaving Pueblo and entering into the Rocky Mountains. Getting
-up was difficult and wonderful for a variety of reasons. 
+up was difficult and wonderful[^5] for a variety of reasons. 
 
 When I finally did rise, around 10AM, I found Mike downstairs. He'd been up for
 at least an hour and a half. He'd changed, cleaned Food Bag 2, adjusted my rear
@@ -203,4 +203,5 @@ the pueblo area.
 [^3]: stupid, I know
 [^4]: Mike doesn't believe in painkillers or vitamins, so he didn't partake. Too
 bad for him.
+[^5]: mostly wonderful
                    
