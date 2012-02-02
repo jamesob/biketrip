@@ -210,6 +210,11 @@ Every day since, part of me wishes I were back on the road,
 continuing the adventure. I haven't asked, but I can only assume Mike feels
 similarly.
 
+Thanks so much to the wonderful people we met on this adventure; I can't express
+my gratitude in full over a web page. I think of each of you often. You've
+given my life new depth and dimension, and here I'll also venture that Mike
+feels similarly.
+
 <div class="imageWithCaption">
 <a href="http://www.flickr.com/photos/62630874@N02/5992714588/" title="Hillside 6 by james.ob, on Flickr"><img src="http://farm7.staticflickr.com/6128/5992714588_366b1cc955.jpg" width="500" height="375" alt="Hillside 6"></a>
 	<div class="imageCaption">
