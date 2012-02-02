@@ -2,6 +2,18 @@
 layout: withSidebar
 title: Ad Hoc Adventure Time
 ---
+
+<div id="fin">
+  <h2>We made it!</h2>
+  {% for post in site.posts limit:1 %}
+  <a href="{{ post.url }}"
+    title="IMG_0001_6 by james.ob, on Flickr"><img class="blockCenter framed"
+    src="http://farm8.staticflickr.com/7011/6803853625_a0229fb4db.jpg"
+    width="500" height="375" alt="IMG_0001_6"></a>
+  <p>On July 14, 2011, Mike and I rolled across the golden gate bridge... <a
+    href="{{ post.url }}">read more</a>.</p>
+  {% endfor %}
+</div>
  
 <div id="news">
     <h2>Breaking news</h2>
